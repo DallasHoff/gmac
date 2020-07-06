@@ -1,0 +1,39 @@
+{
+    "name": "gmac",
+    "version": "1.2.1",
+    "description": "Website for Griffin Martial Arts Center",
+    "author": "Dallas Hoffman",
+    "license": "GPL-3.0-or-later",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DallasHoff/gmac.git"
+    },
+    "scripts": {
+        "serve": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "deploy": "node fetchSheetConfig.js && nuxt generate"
+    },
+    "config": {
+        "nuxt": {
+            "port": "8080"
+        }
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.19",
+        "@fortawesome/free-brands-svg-icons": "^5.9.0",
+        "@fortawesome/free-solid-svg-icons": "^5.9.0",
+        "@fortawesome/vue-fontawesome": "^0.1.6",
+        "@nuxtjs/axios": "^5.3.6",
+        "axios": "^0.18.0",
+        "cross-env": "^5.2.0",
+        "nuxt": "^2.4.0",
+        "vue-flickity": "^1.2.1"
+    },
+    "devDependencies": {
+        "node-sass": "^4.12.0",
+        "nodemon": "^1.18.9",
+        "sass-loader": "^7.1.0"
+    }
+}

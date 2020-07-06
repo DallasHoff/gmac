@@ -1,0 +1,219 @@
+@import "~/assets/_theme.scss";
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+    font-family: 'Merriweather', -apple-system, BlinkMacSystemFont,
+'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-size-adjust: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+	min-width: $point0;
+	color: $body;
+    background-color: $background2;
+    border-top: 4px solid $red2;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+    line-height: 1.2em;
+	font-family: 'Merienda One', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+    color: $headings;
+}
+h1 {font-size: 2.5em; margin: 0 0 $gap3 0;}
+h2 {font-size: 2em; margin: 0 0 $gap3 0;}
+h3 {font-size: 1.2em; margin: 0 0 $gap2 0;}
+h4 {font-size: 1em; margin: 0 0 $gap1 0;}
+h5 {font-size: .8em; margin: 0 0 $gap1 0;}
+h6 {font-size: .6em; margin: 0 0 $gap1 0;}
+p {margin: 0 0 1em 0;}
+img {display: block;}
+address {font-style: normal;}
+dialog {border: none;}
+ul, ol {
+    padding-left: 1.5rem;
+    margin: 1.5rem 0 2rem 0;
+}
+ul {
+    /*list-style-image: url('./img/decor/bullet.png');*/
+    list-style-type: disc;
+}
+li {margin: .5rem 0;}
+label {display: block;}
+
+article section,
+aside section {
+    margin-bottom: $gap8;
+}
+
+
+a {
+    color: $red3;
+    text-decoration: none;
+    background-image: linear-gradient($headings, $headings);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 300ms, color 300ms;
+	cursor: pointer;
+}
+a:hover, a:focus {
+    color: $headings;
+    background-size: 100% 2px;
+}
+a:active {
+    background-image: linear-gradient($red2, $red2);
+	transition: none;
+}
+input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="password"], textarea {
+	appearance: none;
+	width: 100%;
+	font-size: 1em;
+	font-family: inherit;
+	background-color: $background2;
+	border: 1px solid $body;
+	border-radius: 0;
+	padding: .4em .6em;
+	margin: .1rem 0 $gap1 0;
+	box-shadow: inset 0 .2em .3em rgba(0,0,0,.2);
+}
+textarea {resize: vertical;}
+figure.article-figure {
+    padding: $gap2;
+    margin: 0 0 $gap4 0;
+    background-color: $light3;
+    img, picture {
+        width: 100%;
+        height: auto;
+    }
+    figcaption {
+        font-size: .8em;
+        line-height: 1.4em;
+        color: $subtle;
+        margin-top: $gap1;
+    }
+}
+
+
+[disabled] {opacity: .6;}
+[v-cloak] {display: none !important;}
+
+
+/* Tables */
+.table-wrapper {
+    max-width: 100vw;
+    background-color: $light1;
+    box-shadow: $cardshadow;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.article-table {
+    font-size: .8em;
+    line-height: 1.4em;
+    width: 100%;
+    background-color: $light3;
+    margin: 0;
+    text-align: left;
+    overflow: hidden;
+    &, thead, tbody, tfoot, tr, th, td {
+        border: none;
+        border-collapse: collapse;
+    }
+    th, td {
+        min-width: 10em;
+        padding: $gap1 $gap2;
+    }
+    th {
+        background-color: $red2;
+        color: $light1;
+    }
+    tbody tr:nth-child(even) {
+        background-color: $light1;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+
+/* Vue Animations */
+.v-fade-enter-active, .v-fade-leave-active,
+.page-enter-active, .page-leave-active {
+	transition: opacity 300ms;
+}
+.v-fade-enter, .v-fade-leave-to,
+.page-enter, .page-leave-to {
+	opacity: 0;
+}
+
+.v-float-up-enter-active, .v-float-up-leave-active {
+    transition: transform 500ms, opacity 500ms;
+}
+.v-float-up-enter, .v-float-up-leave-to {
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+
+/* Responsive */
+html {font-size: 14px;}
+@media (min-width: $point1) {
+	html {font-size: 16px;}
+
+    figure.article-figure {
+        float: right;
+        max-width: 50%;
+        margin: 0 0 $gap3 $gap3;
+    }
+}
+@media (min-width: $point2) {
+	html {font-size: 16px;}
+}
+@media (min-width: $point3) {
+	html {font-size: 18px;}
+}
+@media (min-width: $point4) {
+    /* Margin Symbols */
+    main {
+        position: relative;
+        &::before, &::after {
+            z-index: 2000;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: 8rem;
+            background-repeat: no-repeat;
+            opacity: .1;
+            pointer-events: none;
+        }
+        &::before {
+            background-image: url(~assets/img/decor/symbol-taekwondo.png);
+            background-position: top $gap4 left $gap2;
+        }
+        &::after {
+            background-image: url(~assets/img/decor/symbol-korean.png);
+            background-position: bottom $gap4 right $gap2;
+        }
+    }
+}
