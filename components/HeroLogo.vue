@@ -80,6 +80,7 @@ export default {}
     .hero-logo {
         &__title {
             font-size: 6em;
+            line-height: 1em;
         }
     }
 }
