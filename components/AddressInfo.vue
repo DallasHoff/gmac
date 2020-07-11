@@ -6,7 +6,6 @@
             Bldg B<br />
             Griffin, GA 30224
         </address>
-        <p>At Hero Fitness Gym behind Primerica</p>
     </lazy-section>
 </template>
 
