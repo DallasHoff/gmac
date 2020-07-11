@@ -15,7 +15,7 @@
 <script>
 import LazySection from '~/components/LazySection.vue'
 import StrokeHeading from '~/components/StrokeHeading.vue'
-import scheduleData from '~/static/config/schedule.json'
+//import scheduleData from '~/static/config/schedule.json'
 
 export default {
     data() {
@@ -24,7 +24,12 @@ export default {
         }
     },
     created() {
-        this.schedule = scheduleData.values.filter((row, index) => index > 0 && row[0] && row[1]);
+        //this.schedule = scheduleData.values.filter((row, index) => index > 0 && row[0] && row[1]);
+        this.schedule = [
+            ['Monday - Friday', '6:00 am - 10:00 pm'],
+            ['Saturday', '6:00 am - 1:00 pm'],
+            ['Sunday', 'Closed']
+        ];
     },
     components: {
         LazySection,
