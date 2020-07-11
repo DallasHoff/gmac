@@ -2,7 +2,7 @@
     <nav class="app-navbar">
         <nuxt-link to="/" class="app-navbar__wordmark">
             <img src="@/assets/img/griffin_logo_red.svg" alt="" class="app-navbar__wordmark-logo" />
-            <h2 class="app-navbar__wordmark-heading">Griffin Tae Kwon-Do</h2>
+            <h2 class="app-navbar__wordmark-heading">Griffin Martial Arts Center</h2>
         </nuxt-link>
         <div class="app-navbar__pages">
 

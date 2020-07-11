@@ -1,10 +1,10 @@
 <template>
     <div class="page-home">
         <section id="introduction">
-            <p>Griffin Tae Kwon-Do is a martial arts school for adults and children ages six and up located in Griffin, Georgia. Regular classes are held for training to earn belts with the United Tae Kwon-Do Federation. Please call Eric Hoffman at <a href="tel:678-778-3789" rel="noopener">678-778-3789</a> to sign up.</p>
+            <p>Griffin Martial Arts Center is a martial arts school for adults and children ages six and up located in Griffin, Georgia. Regular classes are held for training to earn belts with the United Tae Kwon-Do Federation. Please call Eric Hoffman at <a href="tel:678-778-3789" rel="noopener">678-778-3789</a> to sign up.</p>
         </section>
         <section id="tae-kwon-do-teaches">
-            <h2>Tae Kwon-Do Teaches&hellip;</h2>
+            <h2>Martial Arts Teach&hellip;</h2>
             <vue-intersect @enter="shown.teachesCards = true" @unsupported="shown.teachesCards = true" :threshold="[0.3]">
                 <word-cards :cards="wordCards" :shown="shown.teachesCards"></word-cards>
             </vue-intersect>
@@ -14,10 +14,6 @@
             <vue-intersect @enter="shown.instructorCards = true" @unsupported="shown.instructorCards = true" :threshold="[0.3]">
                 <photo-cards :cards="instructorPhotoCards" :shown="shown.instructorCards"></photo-cards>
             </vue-intersect>
-        </section>
-        <section id="resources">
-            <h2>Resources for Students</h2>
-            <resources-list></resources-list>
         </section>
         <section id="facebook">
             <h2>Facebook</h2>

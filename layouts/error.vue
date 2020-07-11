@@ -23,7 +23,7 @@ export default {
     },
     head() {
         return {
-            title: this.message + ' | Griffin Tae Kwon-Do'
+            title: this.message + ' | Griffin Martial Arts Center'
         }
     },
     computed: {

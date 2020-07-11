@@ -1,6 +1,6 @@
 <template>
     <lazy-section id="class-schedule" class="schedule-info" v-if="schedule.length > 0">
-        <stroke-heading>Class Schedule</stroke-heading>
+        <stroke-heading>Hours</stroke-heading>
         <table class="schedule-info__table">
             <tbody>
                 <tr v-for="day in schedule" :key="day[0]">

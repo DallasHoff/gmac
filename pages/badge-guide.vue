@@ -37,12 +37,12 @@ export default {
     },
     head() {
         return {
-            title: this.title + ' | Griffin Tae Kwon-Do',
+            title: this.title + ' | Griffin Martial Arts Center',
             meta: [
-                { hid: 'og:title', name: 'og:title', content: this.title + ' | Griffin Tae Kwon-Do' },
+                { hid: 'og:title', name: 'og:title', content: this.title + ' | Griffin Martial Arts Center' },
                 { hid: 'description', name: 'description', content: this.intro },
                 { hid: 'og:description', name: 'og:description', content: this.intro },
-                { hid: 'og:url', property: 'og:url', content: 'https://griffintkd.org/badge-guide' }
+                { hid: 'og:url', property: 'og:url', content: 'https://griffindojo.com/badge-guide' }
             ]
         }
     },

@@ -3,12 +3,12 @@
         <h1 class="hero-logo__title">
             <transition name="v-logo" appear>
                 <div class="hero-logo__title-text">
-                    <div class="hero-logo__title-line1">Griffin</div> <div class="hero-logo__title-line2">Tae Kwon-Do</div>
+                    <div class="hero-logo__title-line1">Griffin Martial</div> <div class="hero-logo__title-line2">Arts Center</div>
                 </div>
             </transition>
             <transition name="v-logo-ghost" appear>
                 <div class="hero-logo__title-ghost" aria-hidden="true">
-                    <div class="hero-logo__title-line1">Griffin</div> <div class="hero-logo__title-line2">Tae Kwon-Do</div>
+                    <div class="hero-logo__title-line1">Griffin Martial</div> <div class="hero-logo__title-line2">Arts Center</div>
                 </div>
             </transition>
         </h1>

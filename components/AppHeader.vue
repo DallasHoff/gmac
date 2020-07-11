@@ -26,8 +26,16 @@ export default {
         display: flex;
         align-items: center;
         max-width: $point2;
-        padding: $gap2 $gap4;
+        padding: $gap2 $gap2;
         margin: auto;
+    }
+}
+
+@media (min-width: $point1) {
+    .app-header {
+        &__inner {
+            padding: $gap2 $gap4;
+        }
     }
 }
 </style>

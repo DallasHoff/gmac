@@ -11,7 +11,7 @@
 				<span class="app-footer__connect-icon">
 					<fa :icon="['fas', 'envelope']" fixed-width title="Email address"></fa>
 				</span>
-				<a href="mailto:eric@griffintkd.org" rel="noopener" target="_top">eric@griffintkd.org</a>
+				<a href="mailto:eric@griffindojo.com" rel="noopener" target="_top">eric@griffindojo.com</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
@@ -20,7 +20,7 @@
 				<a href="tel:678-778-3789" rel="noopener">(678) 778-3789</a>
 			</div>
 		</div>
-		<p class="app-footer__footnote">Site by Dallas Hoffman | Copyright {{currentYear}} Griffin Tae Kwon-Do</p>
+		<p class="app-footer__footnote">Site by Dallas Hoffman | Copyright {{currentYear}} Griffin Martial Arts Center</p>
 	</footer>
 </template>
 

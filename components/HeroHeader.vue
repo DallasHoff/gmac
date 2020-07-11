@@ -94,7 +94,7 @@ export default {
         position: relative;
         max-width: $point3;
         margin: auto;
-        padding: 0 $gap4;
+        padding: 0 $gap2;
     }
     &::before {
         content: '';
@@ -132,6 +132,9 @@ export default {
 @media (min-width: $point1) {
     .hero-header {
         padding: $gap3 0;
+        &__inner {
+            padding: 0 $gap4;
+        }
     }
 }
 </style>
