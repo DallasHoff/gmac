@@ -72,16 +72,16 @@ export default {
                     body: `School owner and third-degree black belt with ${currentYear - 2010} years of training in Tae Kwon-Do`
                 },
                 {
-                    src: '/img/instructors/wes.jpg',
-                    alt: 'Photo of instructor Wes Lowe',
-                    heading: 'Wes Lowe',
-                    body: `Third-degree black belt with ${currentYear - 1980} years of martial arts experience`
-                },
-                {
                     src: '/img/instructors/michelle.jpg',
                     alt: 'Photo of instructor Michelle Worth',
                     heading: 'Dr. Michelle Worth',
                     body: `Fifth-degree black belt in Tang Soo Do and first-degree in Tae Kwon-Do with ${currentYear - 2000} years of martial arts experience`
+                },
+                {
+                    src: '/img/instructors/wes.jpg',
+                    alt: 'Photo of instructor Wes Lowe',
+                    heading: 'Wes Lowe',
+                    body: `Third-degree black belt with ${currentYear - 1980} years of martial arts experience`
                 }
             ]
         }
