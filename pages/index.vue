@@ -82,6 +82,12 @@ export default {
                     alt: 'Photo of instructor Wes Lowe',
                     heading: 'Wes Lowe',
                     body: `Third-degree black belt with ${currentYear - 1980} years of martial arts experience`
+                },
+                {
+                    src: '/img/instructors/matt.jpg',
+                    alt: 'Photo of instructor Matt Clanton',
+                    heading: 'Matt Clanton',
+                    body: `Former police officer with 3 years of active service and ${currentYear - 2004} years as a Black Belt/Certified Instructor in Israeli Krav Maga`
                 }
             ]
         }
