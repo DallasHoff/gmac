@@ -17,7 +17,7 @@
         </section>
         <section id="facebook">
             <h2>Facebook</h2>
-            <p>Follow us on Facebook <a href="https://www.facebook.com/GriffinTKD" target="_blank" rel="noopener">@GriffinTKD</a> for announcements about classes and events.</p>
+            <p>Follow us on Facebook <a href="https://www.facebook.com/griffinmartialartscenter/" target="_blank" rel="noopener">@GriffinMartialArtsCenter</a> for announcements about classes and events.</p>
         </section>
     </div>
 </template>

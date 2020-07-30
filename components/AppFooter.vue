@@ -5,7 +5,7 @@
 				<span class="app-footer__connect-icon">
 					<fa :icon="['fab', 'facebook-square']" fixed-width title="Facebook page"></fa>
 				</span>
-				<a href="https://www.facebook.com/GriffinTKD/" rel="noopener" target="_blank">GriffinTKD</a>
+				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">@GriffinMartialArtsCenter</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">

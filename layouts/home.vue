@@ -19,6 +19,7 @@
                         <announcements-list></announcements-list>
                         <address-info></address-info>
                         <schedule-info></schedule-info>
+                        <calendar-info></calendar-info>
                     </div>
                 </aside>
             </div>
@@ -35,6 +36,7 @@ import CarouselThumbs from '~/components/CarouselThumbs.vue'
 import AnnouncementsList from '~/components/AnnouncementsList.vue'
 import AddressInfo from '~/components/AddressInfo.vue'
 import ScheduleInfo from '~/components/ScheduleInfo.vue'
+import CalendarInfo from '~/components/CalendarInfo.vue'
 import AppFooter from '~/components/AppFooter.vue'
 
 export default {
@@ -65,6 +67,7 @@ export default {
         AnnouncementsList,
         AddressInfo,
         ScheduleInfo,
+        CalendarInfo,
         AppFooter
     }
 }
@@ -89,6 +92,9 @@ export default {
             left: 100%;
             width: 100vw;
             background-color: $red2;
+        }
+        a {
+            color: $headings;
         }
     }
     &__page-inner,
