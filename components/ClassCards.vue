@@ -12,7 +12,7 @@
                         <fa icon="phone" fixed-width title="Phone number"></fa>
                         {{card.phone}}
                     </a>
-                    <a :href="card.website" v-if="card.website">
+                    <a :href="'//' + card.website" v-if="card.website">
                         <fa icon="link" fixed-width title="Website"></fa>
                         {{card.website}}
                     </a>
