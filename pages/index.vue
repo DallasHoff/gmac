@@ -82,6 +82,7 @@ export default {
                 },
                 {
                     title: 'Tai Chi',
+                    img: '/img/instructors/stacy.jpg',
                     instructor: 'Stacy Hoffman',
                     experience: 'Black Belt',
                     phone: '678-852-4414',
