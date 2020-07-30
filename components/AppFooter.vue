@@ -17,7 +17,7 @@
 				<span class="app-footer__connect-icon">
 					<fa :icon="['fas', 'phone']" fixed-width title="Phone number"></fa>
 				</span>
-				<a href="tel:678-778-3789" rel="noopener">(678) 778-3789</a>
+				<a href="tel:678-778-3789" rel="noopener">678-778-3789</a>
 			</div>
 		</div>
 		<p class="app-footer__footnote">Site by Dallas Hoffman | Copyright {{currentYear}} Griffin Martial Arts Center</p>

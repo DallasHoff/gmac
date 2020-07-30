@@ -1,9 +1,16 @@
 <template>
     <div class="page-home">
         <section id="introduction">
-            <p>Griffin Martial Arts Center is a martial arts school for adults and children ages six and up located in Griffin, Georgia. Regular classes are held for training to earn belts with the United Tae Kwon-Do Federation. Please call Eric Hoffman at <a href="tel:678-778-3789" rel="noopener">678-778-3789</a> to sign up.</p>
+            <p>Griffin Martial Arts Center in Griffin, Georgia offers classes for adults and children in martial arts and gym membership for adults.</p>
+            <p>We have regular classes for ages six and up in Tae Kwon-Do and Tang Soo Do, as well as summer and holiday camps. We also have experienced instructors offering classes and instruction in Brazilian Jiu Jitsu, MMA, Krav Maga, and self-defense.</p>
         </section>
-        <section id="tae-kwon-do-teaches">
+        <section id="classes-offered">
+            <h2>Classes Offered</h2>
+            <vue-intersect @enter="shown.classCards = true" @unsupported="shown.classCards = true" :threshold="[0.3]">
+                <class-cards :cards="classCards" :shown="shown.classCards"></class-cards>
+            </vue-intersect>
+        </section>
+        <section id="martial-arts-teach">
             <h2>Martial Arts Teach&hellip;</h2>
             <vue-intersect @enter="shown.teachesCards = true" @unsupported="shown.teachesCards = true" :threshold="[0.3]">
                 <word-cards :cards="wordCards" :shown="shown.teachesCards"></word-cards>
@@ -24,6 +31,7 @@
 
 <script>
 import VueIntersect from '~/components/VueIntersect.vue'
+import ClassCards from '~/components/ClassCards.vue'
 import WordCards from '~/components/WordCards.vue'
 import PhotoCards from '~/components/PhotoCards.vue'
 import ResourcesList from '~/components/ResourcesList.vue'
@@ -35,9 +43,54 @@ export default {
     data() {
         return {
             shown: {
+                classCards: true,
                 teachesCards: true,
                 instructorCards: true
             },
+            classCards: [
+                {
+                    title: 'Tae Kwon-Do',
+                    instructor: 'Eric Hoffman',
+                    experience: '3rd-degree Black Belt',
+                    phone: '678-778-3789',
+                    website: 'griffintkd.org'
+                },
+                {
+                    title: 'Tang Soo Do',
+                    instructor: 'Michelle Worth',
+                    experience: '5th-degree Black Belt',
+                    phone: '404-381-7273',
+                    website: ''
+                },
+                {
+                    title: 'Mixed Martial Arts and Self-defense',
+                    instructor: 'Wes Lowe',
+                    experience: '3rd-degree Black Belt',
+                    phone: '770-318-4457',
+                    website: ''
+                },
+                {
+                    title: 'Anchor Jiu Jitsu',
+                    instructor: 'Mike Rock',
+                    experience: '',
+                    phone: '678-485-4832',
+                    website: ''
+                },
+                {
+                    title: 'Dynamic Combatives and Self-Defense',
+                    instructor: 'Matt Clanton',
+                    experience: 'Black Belt',
+                    phone: '678-485-1498',
+                    website: 'www.dcsd.info'
+                },
+                {
+                    title: 'Tai Chi',
+                    instructor: 'Stacy Hoffman',
+                    experience: 'Black Belt',
+                    phone: '678-852-4414',
+                    website: ''
+                }
+            ],
             wordCards: [
                 {
                     word: 'Discipline',
@@ -94,12 +147,14 @@ export default {
     },
     mounted() {
         this.shown = {
+            classCards: false,
             teachesCards: false,
             instructorCards: false
         };
     },
     components: {
         VueIntersect,
+        ClassCards,
         WordCards,
         PhotoCards,
         ResourcesList

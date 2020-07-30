@@ -18,8 +18,8 @@
                     <div class="layout-home__sidebar-inner">
                         <announcements-list></announcements-list>
                         <address-info></address-info>
-                        <schedule-info></schedule-info>
                         <calendar-info></calendar-info>
+                        <schedule-info></schedule-info>
                     </div>
                 </aside>
             </div>
