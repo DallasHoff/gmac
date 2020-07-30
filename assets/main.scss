@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {font-size: 2.5em; margin: 0 0 $gap3 0;}
 h2 {font-size: 2em; margin: 0 0 $gap3 0;}
-h3 {font-size: 1.2em; margin: 0 0 $gap2 0;}
+h3 {font-size: 1.3em; margin: 0 0 $gap2 0;}
 h4 {font-size: 1em; margin: 0 0 $gap1 0;}
 h5 {font-size: .8em; margin: 0 0 $gap1 0;}
 h6 {font-size: .6em; margin: 0 0 $gap1 0;}
@@ -65,20 +65,24 @@ aside section {
 a {
     color: $red3;
     text-decoration: none;
-    background-image: linear-gradient($headings, $headings);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size 300ms, color 300ms;
 	cursor: pointer;
-}
-a:hover, a:focus {
-    color: $headings;
-    background-size: 100% 2px;
-}
-a:active {
-    background-image: linear-gradient($red2, $red2);
-	transition: none;
+    &:hover, &:focus {
+        color: $headings;
+    }
+    &:not(.no-link-underline) {
+        background-image: linear-gradient($headings, $headings);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 300ms, color 300ms;
+        &:hover, &:focus {
+            background-size: 100% 2px;
+        }
+        &:active {
+            background-image: linear-gradient($red2, $red2);
+            transition: none;
+        }
+    }
 }
 input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="password"], textarea {
 	appearance: none;

@@ -1,6 +1,6 @@
 <template>
     <div class="photo-cards">
-        <figure class="photo-cards__card" :class="{'photo-cards__card--invisible': shown === false}" v-for="(card, index) in cards" :key="card.src" :style="{'transition-delay': (index * 100) + 'ms'}">
+        <figure :id="card.heading.replace(/ /g, '_')" class="photo-cards__card" :class="{'photo-cards__card--invisible': shown === false}" v-for="(card, index) in cards" :key="card.src" :style="{'transition-delay': (index * 100) + 'ms'}">
             <img :src="card.src" :alt="card.alt" class="photo-cards__image" />
             <figcaption class="photo-cards__caption">
                 <div class="photo-cards__content">

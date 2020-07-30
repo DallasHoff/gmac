@@ -1,17 +1,22 @@
 <template>
     <ul class="class-cards">
         <li class="class-cards__class" :class="{'class-cards__class--invisible': shown === false}" v-for="(card, index) in cards" :key="card.title" :style="{'transition-delay': (index * 100) + 'ms'}">
-            <h3>{{card.title}}</h3>
-            <h4>{{card.instructor}}<span v-if="card.experience"> - </span>{{card.experience}}</h4>
-            <div class="class-cards__links">
-                <a :href="'tel:' + card.phone" v-if="card.phone" rel="noopener">
-                    <fa icon="phone" fixed-width title="Phone number"></fa>
-                    {{card.phone}}
-                </a>
-                <a :href="card.website" v-if="card.website">
-                    <fa icon="link" fixed-width title="Website"></fa>
-                    {{card.website}}
-                </a>
+            <figure class="class-cards__figure" v-if="card.img">
+                <img :src="card.img" alt="">
+            </figure>
+            <div>
+                <h3>{{card.title}}</h3>
+                <h4>{{card.instructor}}<span v-if="card.experience"> - {{card.experience}}</span></h4>
+                <div class="class-cards__links">
+                    <a :href="'tel:' + card.phone" v-if="card.phone" rel="noopener">
+                        <fa icon="phone" fixed-width title="Phone number"></fa>
+                        {{card.phone}}
+                    </a>
+                    <a :href="card.website" v-if="card.website">
+                        <fa icon="link" fixed-width title="Website"></fa>
+                        {{card.website}}
+                    </a>
+                </div>
             </div>
         </li>
     </ul>
@@ -49,12 +54,42 @@ export default {
             color: $subtle;
         }
     }
+    &__figure {
+        width: 40%;
+        max-width: 9em;
+        float: right;
+        margin-left: auto;
+        padding-left: $gap3;
+        padding-bottom: $gap3;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            clip-path: circle();
+        }
+    }
     &__links {
         display: flex;
         flex-wrap: wrap;
         margin-top: $gap3;
         a {
             margin-right: $gap3;
+        }
+    }
+}
+
+@media (min-width: $point1) {
+    .class-cards {
+        &__class {
+            display: flex;
+            align-items: center;
+        }
+        &__figure {
+            flex: 0 0 auto;
+            width: 30%;
+            max-width: 9em;
+            order: 1;
+            padding-bottom: 0;
         }
     }
 }
