@@ -44,7 +44,7 @@ export default {
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merienda+One|Merriweather:400,700&display=swap' }
         ],
         script: [
-            { src: 'https://kit.fontawesome.com/2e549a7184.js', crossorigin: 'anonymous' }
+            { src: 'https://kit.fontawesome.com/2e549a7184.js', crossorigin: 'anonymous', async: true }
         ]
     },
 
