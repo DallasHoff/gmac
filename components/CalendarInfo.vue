@@ -3,7 +3,7 @@
         <stroke-heading>Class Schedule</stroke-heading>
         <p>View the full calendar of upcoming classes on Google Calendars.</p>
         <a href="https://calendar.google.com/calendar/b/6?cid=ZXJpY2dyaWZmaW50a2RAZ21haWwuY29t" rel="noopener" target="_blank">
-            <fa icon="arrow-circle-right" fixed-width></fa>
+            <i class="fas fa-arrow-circle-right fa-fw"></i>
             Calendar
         </a>
     </lazy-section>

@@ -9,11 +9,11 @@
                 <h4>{{card.instructor}}<span v-if="card.experience"> - {{card.experience}}</span></h4>
                 <div class="class-cards__links">
                     <a :href="'tel:' + card.phone" v-if="card.phone" rel="noopener">
-                        <fa icon="phone" fixed-width title="Phone number"></fa>
+                        <i class="fas fa-phone fa-fw" title="Phone number"></i>
                         {{card.phone}}
                     </a>
                     <a :href="'//' + card.website" v-if="card.website">
-                        <fa icon="link" fixed-width title="Website"></fa>
+                        <i class="fas fa-link fa-fw" title="Website"></i>
                         {{card.website}}
                     </a>
                 </div>

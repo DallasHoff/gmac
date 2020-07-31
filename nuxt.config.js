@@ -43,7 +43,9 @@ export default {
             { rel: 'mask-icon', type: '/safari-pinned-tab.svg', color: '#dd2222' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merienda+One|Merriweather:400,700&display=swap' }
         ],
-        script: []
+        script: [
+            { src: 'https://kit.fontawesome.com/2e549a7184.js', crossorigin: 'anonymous' }
+        ]
     },
 
     /*
@@ -63,7 +65,6 @@ export default {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        '~/plugins/fontawesome.js',
         {
             src: '~/plugins/vue-flickity.js',
             ssr: false

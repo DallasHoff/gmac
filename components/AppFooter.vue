@@ -3,19 +3,19 @@
 		<div class="app-footer__connect">
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<fa :icon="['fab', 'facebook-square']" fixed-width title="Facebook page"></fa>
+					<i class="fab fa-facebook-square fa-fw" title="Facebook page"></i>
 				</span>
 				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">@GriffinMartialArtsCenter</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<fa :icon="['fas', 'envelope']" fixed-width title="Email address"></fa>
+					<i class="fas fa-envelope fa-fw" title="Email address"></i>
 				</span>
 				<a href="mailto:eric@griffindojo.com" rel="noopener" target="_top">eric@griffindojo.com</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<fa :icon="['fas', 'phone']" fixed-width title="Phone number"></fa>
+					<i class="fas fa-phone fa-fw" title="Phone number"></i>
 				</span>
 				<a href="tel:888-218-5713" rel="noopener">888-218-5713</a>
 			</div>

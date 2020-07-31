@@ -1,7 +1,7 @@
 <template>
     <ul class="word-cards">
         <li class="word-cards__word" :class="{'word-cards__word--invisible': shown === false}" v-for="(card, index) in cards" :key="card.word" :style="{'transition-delay': (index * 100) + 'ms'}">
-            <fa :icon="card.icon" fixed-width class="word-cards__icon"></fa>
+            <i :class="card.icon" class="fa-fw word-cards__icon"></i>
             <h3>{{card.word}}</h3>
         </li>
     </ul>

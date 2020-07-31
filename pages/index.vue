@@ -92,27 +92,27 @@ export default {
             wordCards: [
                 {
                     word: 'Discipline',
-                    icon: ['fas', 'brain']
+                    icon: ['fas', 'fa-brain']
                 },
                 {
                     word: 'Confidence',
-                    icon: ['fas', 'smile-beam']
+                    icon: ['fas', 'fa-smile-beam']
                 },
                 {
                     word: 'Balance',
-                    icon: ['fas', 'balance-scale']
+                    icon: ['fas', 'fa-balance-scale']
                 },
                 {
                     word: 'Perseverance',
-                    icon: ['fas', 'fist-raised']
+                    icon: ['fas', 'fa-fist-raised']
                 },
                 {
                     word: 'Physical Fitness',
-                    icon: ['fas', 'running']
+                    icon: ['fas', 'fa-running']
                 },
                 {
                     word: 'Self-Defense',
-                    icon: ['fas', 'shield-alt']
+                    icon: ['fas', 'fa-shield-alt']
                 }
             ]
         }
