@@ -27,6 +27,9 @@ export default {
 
 .calendar-info {
     color: $light3;
+    a {
+        font-size: 1.2em;
+    }
 }
 @media only print {
     .calendar-info {

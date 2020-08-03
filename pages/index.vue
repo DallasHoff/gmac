@@ -76,7 +76,7 @@ export default {
                     title: 'Dynamic Combatives and Self-Defense',
                     img: '/img/instructors/matt.jpg',
                     instructor: 'Matt Clanton',
-                    experience: 'Black Belt',
+                    experience: 'Krav Maga Black Belt',
                     phone: '678-485-1498',
                     website: 'www.dcsd.info'
                 },
