@@ -3,7 +3,7 @@
         <stroke-heading>Announcements</stroke-heading>
         <ul class="announcements-list__list">
             <li class="announcements-list__item" v-for="(announcement, index) in announcements" :key="announcement[0]">
-                <b>{{announcement[0]}}:</b> {{announcement[1]}}
+                <b>{{announcement[0]}}<span v-if="announcement[1]">:</span></b> {{announcement[1]}}
                 <stroke-rule v-if="index < (announcements.length - 1)"></stroke-rule>
             </li>
         </ul>
@@ -23,7 +23,7 @@ export default {
         }
     },
     created() {
-        this.announcements = announcementsData.values.filter((row, index) => index > 0 && row[0] && row[1]);
+        this.announcements = announcementsData.values.filter((row, index) => index > 0 && row[0]);
     },
     components: {
         LazySection,
