@@ -9,6 +9,12 @@
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
+					<i class="fab fa-instagram fa-fw" title="Instagram page"></i>
+				</span>
+				<a href="https://www.instagram.com/gmac1454/" rel="noopener" target="_blank">@gmac1454</a>
+			</div>
+			<div class="app-footer__connect-item">
+				<span class="app-footer__connect-icon">
 					<i class="fas fa-envelope fa-fw" title="Email address"></i>
 				</span>
 				<a href="mailto:eric@griffindojo.com" rel="noopener" target="_top">eric@griffindojo.com</a>

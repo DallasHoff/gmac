@@ -16,9 +16,9 @@
                 <class-cards :cards="classCards" :shown="shown.classCards"></class-cards>
             </vue-intersect>
         </section>
-        <section id="facebook">
-            <h2>Facebook</h2>
-            <p>Follow us on Facebook <a href="https://www.facebook.com/griffinmartialartscenter/" target="_blank" rel="noopener">@GriffinMartialArtsCenter</a> for announcements about classes and events.</p>
+        <section id="social">
+            <h2>Social Media</h2>
+            <p>Follow us on Facebook <a href="https://www.facebook.com/griffinmartialartscenter/" target="_blank" rel="noopener">@GriffinMartialArtsCenter</a> or Instagram <a href="https://www.instagram.com/gmac1454/" target="_blank" rel="noopener">@gmac1454</a> for announcements about classes and events.</p>
         </section>
     </div>
 </template>
