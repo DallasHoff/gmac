@@ -57,14 +57,6 @@ export default {
                     website: ''
                 },
                 {
-                    title: 'Mixed Martial Arts and Self-defense',
-                    img: '/img/instructors/wes.jpg',
-                    instructor: 'Wes Lowe',
-                    experience: '3rd-degree Black Belt',
-                    phone: '770-318-4457',
-                    website: ''
-                },
-                {
                     title: 'Anchor Jiu Jitsu',
                     img: '/img/instructors/mike.jpg',
                     instructor: 'Mike Rock',
