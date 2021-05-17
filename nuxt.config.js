@@ -6,7 +6,8 @@ const siteDescription = 'Griffin Martial Arts Center is a martial arts school fo
 
 
 export default {
-    mode: 'universal',
+    target: 'static',
+    ssr: true,
 
     /*
     ** Headers of the page
