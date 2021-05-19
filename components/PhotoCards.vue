@@ -1,7 +1,7 @@
 <template>
     <div class="photo-cards">
-        <figure :id="card.heading.replace(/ /g, '_')" class="photo-cards__card" :class="{'photo-cards__card--invisible': shown === false}" v-for="(card, index) in cards" :key="card.src" :style="{'transition-delay': (index * 100) + 'ms'}">
-            <img :src="card.src" :alt="card.alt" class="photo-cards__image" />
+        <figure :id="card.heading.replace(/ /g, '_')" class="photo-cards__card" :class="{'photo-cards__card--invisible': shown === false}" v-for="(card, index) in cards" :key="card.heading" :style="{'transition-delay': (index * 100) + 'ms'}">
+            <img :src="card.src" :alt="card.alt" class="photo-cards__image" v-if="card.src" />
             <figcaption class="photo-cards__caption">
                 <div class="photo-cards__content">
                     <h3>{{card.heading}}</h3>
