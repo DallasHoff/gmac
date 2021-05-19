@@ -35,22 +35,6 @@ export default {}
         position: relative;
     }
 }
-@media not all and (min-resolution:.001dpcm) {
-    /* Safari hack */
-    @supports (-webkit-appearance:none) { 
-        .stroke-heading {
-            &__stroke {
-                display: none;
-            }
-            &__text {
-                background-image: linear-gradient($headings, $headings);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 100% .1em;
-            }
-        }
-    }
-}
 @media only print {
     .stroke-heading {
         color: black;
