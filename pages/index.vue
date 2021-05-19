@@ -7,7 +7,7 @@
         <section id="martial-arts-teach">
             <h2>Martial Arts Teach&hellip;</h2>
             <vue-intersect @enter="shown.teachesCards = true" @unsupported="shown.teachesCards = true" :threshold="[0.3]">
-                <word-cards :cards="wordCards" :shown="shown.teachesCards"></word-cards>
+                <word-cards :cards="skillCards" :shown="shown.teachesCards"></word-cards>
             </vue-intersect>
         </section>
         <section id="classes-offered">
@@ -29,7 +29,7 @@ import ClassCards from '~/components/ClassCards.vue'
 import WordCards from '~/components/WordCards.vue'
 import ResourcesList from '~/components/ResourcesList.vue'
 
-const currentYear = new Date().getFullYear();
+import skillCardsData from '~/assets/home-config/skill-cards.json'
 
 export default {
     layout: 'home',
@@ -81,39 +81,39 @@ export default {
                     website: ''
                 }
             ],
-            wordCards: [
-                {
-                    word: 'Discipline',
-                    icon: ['fas', 'fa-brain']
-                },
-                {
-                    word: 'Confidence',
-                    icon: ['fas', 'fa-smile-beam']
-                },
-                {
-                    word: 'Balance',
-                    icon: ['fas', 'fa-balance-scale']
-                },
-                {
-                    word: 'Perseverance',
-                    icon: ['fas', 'fa-fist-raised']
-                },
-                {
-                    word: 'Physical Fitness',
-                    icon: ['fas', 'fa-running']
-                },
-                {
-                    word: 'Self-Defense',
-                    icon: ['fas', 'fa-shield-alt']
-                }
+            skillCards: []
+        }
+    },
+    head() {
+        return {
+            script: [
+                {src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true}
             ]
         }
+    },
+    created() {
+        // Fetch skill cards config
+        this.skillCards = skillCardsData.cards.map(card => {
+            var iconKey = card.icon;
+            card.icon = ['fas', 'fa-' + iconKey];
+            return card;
+        });
     },
     mounted() {
         this.shown = {
             classCards: false,
             teachesCards: false
         };
+        // CMS Auth Redirect
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', user => {
+                if (!user) {
+                    window.netlifyIdentity.on('login', () => {
+                        document.location.href = '/admin/';
+                    });
+                }
+            });
+        }
     },
     components: {
         VueIntersect,

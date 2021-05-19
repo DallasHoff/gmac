@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "word": "Discipline",
+      "icon": "brain"
+    },
+    {
+      "word": "Confidence",
+      "icon": "smile-beam"
+    },
+    {
+      "word": "Balance",
+      "icon": "balance-scale"
+    },
+    {
+      "word": "Perseverance",
+      "icon": "fist-raised"
+    },
+    {
+      "word": "Physical Fitness",
+      "icon": "running"
+    },
+    {
+      "word": "Self-Defense",
+      "icon": "shield-alt"
+    }
+  ]
+}
