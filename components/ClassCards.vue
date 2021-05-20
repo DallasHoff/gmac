@@ -11,11 +11,11 @@
                 </h4>
                 <div class="class-cards__links">
                     <a :href="'tel:' + card.phone" v-if="card.phone" rel="noopener">
-                        <i class="fas fa-phone fa-fw" title="Phone number"></i>
+                        <icon class="fas fa-phone fa-fw" title="Phone number"></icon>
                         {{card.phone}}
                     </a>
                     <a :href="'//' + card.website" v-if="card.website" rel="noopener">
-                        <i class="fas fa-link fa-fw" title="Website"></i>
+                        <icon class="fas fa-link fa-fw" title="Website"></icon>
                         {{card.website}}
                     </a>
                 </div>
@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import Icon from '~/components/Icon.vue'
+
 export default {
     props: ['cards', 'shown'],
     methods: {
@@ -35,6 +37,9 @@ export default {
             if (!matches) return url;
             return matches[1];
         }
+    },
+    components: {
+        Icon
     }
 }
 </script>

@@ -3,25 +3,25 @@
 		<div class="app-footer__connect">
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<i class="fab fa-facebook-square fa-fw" title="Facebook page"></i>
+					<icon class="fab fa-facebook-square fa-fw" title="Facebook page"></icon>
 				</span>
 				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">@GriffinMartialArtsCenter</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<i class="fab fa-instagram fa-fw" title="Instagram page"></i>
+					<icon class="fab fa-instagram fa-fw" title="Instagram page"></icon>
 				</span>
 				<a href="https://www.instagram.com/gmac1454/" rel="noopener" target="_blank">@gmac1454</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<i class="fas fa-envelope fa-fw" title="Email address"></i>
+					<icon class="fas fa-envelope fa-fw" title="Email address"></icon>
 				</span>
 				<a href="mailto:eric@griffindojo.com" rel="noopener" target="_top">eric@griffindojo.com</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<i class="fas fa-phone fa-fw" title="Phone number"></i>
+					<icon class="fas fa-phone fa-fw" title="Phone number"></icon>
 				</span>
 				<a href="tel:888-218-5713" rel="noopener">888-218-5713</a>
 			</div>
@@ -31,11 +31,16 @@
 </template>
 
 <script>
+import Icon from '~/components/Icon.vue'
+
 export default {
 	computed: {
 		currentYear() {
 			return new Date().getFullYear();
 		}
+	},
+	components: {
+		Icon
 	}
 }
 </script>
