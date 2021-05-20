@@ -94,9 +94,10 @@ export default {
     created() {
         // Fetch skill cards config
         this.skillCards = skillCardsData.cards.map(card => {
-            var iconKey = card.icon;
-            card.icon = ['fas', 'fa-' + iconKey];
-            return card;
+            var cardCopy = {...card};
+            var iconKey = cardCopy.icon;
+            cardCopy.icon = ['fas', 'fa-' + iconKey];
+            return cardCopy;
         });
     },
     mounted() {
