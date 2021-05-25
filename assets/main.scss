@@ -175,6 +175,12 @@ figure.article-figure {
 }
 
 
+/* Netlify Identity Modal Fix */
+#netlify-identity-widget {
+    z-index: 9000 !important;
+}
+
+
 /* Responsive */
 html {font-size: 14px;}
 @media (min-width: $point1) {
