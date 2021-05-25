@@ -5,7 +5,9 @@
                 <img :src="card.img" alt="">
             </figure>
             <div>
-                <h3>{{card.title}}</h3>
+                <h3>
+                    {{card.title}}
+                </h3>
                 <h4 v-if="card.instructor">
                     {{card.instructor}}<span v-if="card.experience"> - {{card.experience}}</span>
                 </h4>
@@ -14,9 +16,17 @@
                         <icon class="fas fa-phone fa-fw" title="Phone number"></icon>
                         {{card.phone}}
                     </a>
-                    <a :href="'//' + card.website" v-if="card.website" rel="noopener">
+                    <a :href="card.website" v-if="card.website" rel="noopener">
                         <icon class="fas fa-link fa-fw" title="Website"></icon>
-                        {{card.website}}
+                        {{getLinkText(card.website)}}
+                    </a>
+                    <a :href="'https://www.facebook.com/' + card.facebook + '/'" v-if="card.facebook" rel="noopener">
+                        <icon class="fab fa-facebook-square fa-fw" title="Facebook"></icon>
+                        {{card.facebook}}
+                    </a>
+                    <a :href="'https://www.instagram.com/' + card.instagram + '/'" v-if="card.instagram" rel="noopener">
+                        <icon class="fab fa-instagram fa-fw" title="Instagram"></icon>
+                        {{card.instagram}}
                     </a>
                 </div>
             </div>
@@ -66,6 +76,9 @@ export default {
             transform: translateY(2rem);
             opacity: 0;
         }
+        h3 a {
+            color: $headings;
+        }
         h4 {
             color: $subtle;
         }
@@ -81,6 +94,8 @@ export default {
             display: block;
             width: 100%;
             height: auto;
+            aspect-ratio: 1;
+            object-fit: cover;
             clip-path: circle();
         }
     }

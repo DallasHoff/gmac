@@ -30,6 +30,7 @@ import WordCards from '~/components/WordCards.vue'
 import ResourcesList from '~/components/ResourcesList.vue'
 
 import skillCardsData from '~/assets/home-config/skill-cards.json'
+import classCardsData from '~/assets/home-config/class-cards.json'
 
 export default {
     layout: 'home',
@@ -39,48 +40,7 @@ export default {
                 classCards: true,
                 teachesCards: true
             },
-            classCards: [
-                {
-                    title: 'Tae Kwon-Do',
-                    img: '/img/instructors/eric.jpg',
-                    instructor: 'Eric Hoffman',
-                    experience: '3rd-degree Black Belt',
-                    phone: '678-778-3789',
-                    website: 'griffintkd.org'
-                },
-                {
-                    title: 'Tang Soo Do',
-                    img: '/img/instructors/michelle.jpg',
-                    instructor: 'Michelle Worth',
-                    experience: '5th-degree Black Belt',
-                    phone: '404-381-7273',
-                    website: ''
-                },
-                {
-                    title: 'Anchor Jiu Jitsu',
-                    img: '/img/instructors/mike.jpg',
-                    instructor: 'Mike Rock',
-                    experience: '',
-                    phone: '678-485-4832',
-                    website: ''
-                },
-                {
-                    title: 'Dynamic Combatives and Self-Defense',
-                    img: '/img/instructors/matt.jpg',
-                    instructor: 'Matt Clanton',
-                    experience: 'Krav Maga Black Belt',
-                    phone: '678-485-1498',
-                    website: 'www.dcsd.info'
-                },
-                {
-                    title: 'Tai Chi',
-                    img: '/img/instructors/stacy.jpg',
-                    instructor: 'Stacy Hoffman',
-                    experience: 'Black Belt',
-                    phone: '678-852-4414',
-                    website: ''
-                }
-            ],
+            classCards: [],
             skillCards: []
         }
     },
@@ -97,6 +57,11 @@ export default {
             var cardCopy = {...card};
             var iconKey = cardCopy.icon;
             cardCopy.icon = ['fas', 'fa-' + iconKey];
+            return cardCopy;
+        });
+        // Fetch class cards config
+        this.classCards = classCardsData.classes.map(card => {
+            var cardCopy = {...card};
             return cardCopy;
         });
     },

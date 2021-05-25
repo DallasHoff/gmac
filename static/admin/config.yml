@@ -5,13 +5,13 @@ media_folder: "static/img/cms" # Media files will be stored in the repo here
 public_folder: "/img/cms" # The src attribute for uploaded media will begin with this
 logo_url: "/img/cms-logo.png" # Logo shown on CMS login page
 collections:
-  - name: "home-config"
-    label: "Home Configuration"
+  - label: "Home Configuration"
+    name: "home-config"
     description: "Settings to change the content on the home page"
     create: false
     files:
-      - name: "skill-cards"
-        label: "Skill Cards"
+      - label: "Skill Cards"
+        name: "skill-cards"
         file: "assets/home-config/skill-cards.json"
         fields:
           - label: Cards
@@ -19,4 +19,20 @@ collections:
             widget: list
             fields:
               - {label: Skill, name: word, widget: string}
-              - {label: Icon, name: icon, widget: string}
+              - {label: Icon, name: icon, widget: string, hint: "<a href="https://fontawesome.com/icons?s=solid">List of available icons</a>"}
+      - label: "Class List"
+        name: "class-list"
+        file: "assets/home-config/class-cards.json"
+        fields:
+          - label: Classes
+            name: classes
+            widget: list
+            fields:
+              - {label: Class Name, name: title, widget: string}
+              - {label: Photo, name: img, widget: image, allow_multiple: false, required: false}
+              - {label: Instructor Name, name: instructor, widget: string}
+              - {label: Instructor Experience, name: experience, widget: string, required: false}
+              - {label: Phone Number, name: phone, widget: string, required: false}
+              - {label: Website URL, name: website, widget: string, required: false}
+              - {label: Facebook Tag, name: facebook, widget: string, required: false}
+              - {label: Instagram Tag, name: instagram, widget: string, required: false}
