@@ -1,41 +1,41 @@
 {
-    "classes": [
-        {
-            "title": "Tae Kwon-Do",
-            "img": "/img/cms/eric.jpg",
-            "instructor": "Eric Hoffman",
-            "experience": "3rd-degree Black Belt",
-            "phone": "678-778-3789",
-            "website": "https://griffintkd.org/",
-            "facebook": "GriffinTKD"
-        },
-        {
-            "title": "Tang Soo Do",
-            "img": "/img/cms/michelle.jpg",
-            "instructor": "Michelle Worth",
-            "experience": "5th-degree Black Belt",
-            "phone": "404-381-7273"
-        },
-        {
-            "title": "Anchor Jiu Jitsu",
-            "img": "/img/cms/mike.jpg",
-            "instructor": "Mike Rock",
-            "phone": "678-485-4832"
-        },
-        {
-            "title": "Dynamic Combatives and Self-Defense",
-            "img": "/img/cms/matt.jpg",
-            "instructor": "Matt Clanton",
-            "experience": "Krav Maga Black Belt",
-            "phone": "678-485-1498",
-            "website": "https://dcsd.info"
-        },
-        {
-            "title": "Tai Chi",
-            "img": "/img/cms/stacy.jpg",
-            "instructor": "Stacy Hoffman",
-            "experience": "Black Belt",
-            "phone": "678-852-4414"
-        }
-    ]
+  "classes": [
+    {
+      "title": "Tae Kwon-Do",
+      "img": "/img/cms/eric.jpg",
+      "instructor": "Eric Hoffman",
+      "experience": "3rd-degree Black Belt",
+      "phone": "678-778-3789",
+      "website": "https://griffintkd.org/",
+      "facebook": "GriffinTKD"
+    },
+    {
+      "title": "Tang Soo Do",
+      "img": "/img/cms/michelle.jpg",
+      "instructor": "Michelle Worth",
+      "experience": "5th-degree Black Belt",
+      "phone": "404-381-7273"
+    },
+    {
+      "title": "Anchor Jiu Jitsu",
+      "img": "/img/cms/mike.jpg",
+      "instructor": "Mike Rock",
+      "phone": "678-485-4832"
+    },
+    {
+      "title": "Dynamic Combatives and Self-Defense",
+      "img": "/img/cms/matt.jpg",
+      "instructor": "Matt Clanton",
+      "experience": "Krav Maga Black Belt",
+      "phone": "678-485-1498",
+      "website": "https://www.dcsd.info"
+    },
+    {
+      "title": "Tai Chi",
+      "img": "/img/cms/stacy.jpg",
+      "instructor": "Stacy Hoffman",
+      "experience": "Black Belt",
+      "phone": "678-852-4414"
+    }
+  ]
 }
