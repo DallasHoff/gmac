@@ -10,6 +10,11 @@ collections:
     description: "Settings to change the content on the home page"
     create: false
     files:
+      - label: "Article"
+        name: "article"
+        file: "content/home.md"
+        fields:
+          - {label: 'Article Content', name: 'body', widget: 'markdown'}
       - label: "Skill Cards"
         name: "skill-cards"
         file: "assets/home-config/skill-cards.json"

@@ -75,15 +75,9 @@ export default {
     ** Nuxt.js modules
     */
     modules: [
-        // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
+        '@nuxt/content'
     ],
-    /*
-    ** Axios module configuration
-    */
-    axios: {
-        // See https://github.com/nuxt-community/axios-module#options
-    },
 
     /*
     ** Build configuration

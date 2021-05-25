@@ -1,8 +1,7 @@
 <template>
     <div class="page-home">
         <section id="introduction">
-            <p>Griffin Martial Arts Center in Griffin, Georgia offers classes for adults and children in martial arts and gym membership for adults.</p>
-            <p>We have regular classes for ages six and up in Tae Kwon-Do and Tang Soo Do, as well as summer and holiday camps. We also have experienced instructors offering classes and instruction in Brazilian Jiu Jitsu, MMA, Krav Maga, and self-defense.</p>
+            <nuxt-content :document="article"></nuxt-content>
         </section>
         <section id="martial-arts-teach">
             <h2>Martial Arts Teach&hellip;</h2>
@@ -15,10 +14,6 @@
             <vue-intersect @enter="shown.classCards = true" @unsupported="shown.classCards = true" :threshold="[0.3]">
                 <class-cards :cards="classCards" :shown="shown.classCards"></class-cards>
             </vue-intersect>
-        </section>
-        <section id="social">
-            <h2>Social Media</h2>
-            <p>Follow us on Facebook <a href="https://www.facebook.com/griffinmartialartscenter/" target="_blank" rel="noopener">@GriffinMartialArtsCenter</a> or Instagram <a href="https://www.instagram.com/gmac1454/" target="_blank" rel="noopener">@gmac1454</a> for announcements about classes and events.</p>
         </section>
     </div>
 </template>
@@ -50,6 +45,10 @@ export default {
                 {src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true}
             ]
         }
+    },
+    async asyncData({$content}) {
+        const article = await $content('/home').fetch();
+        return {article};
     },
     created() {
         // Fetch skill cards config
