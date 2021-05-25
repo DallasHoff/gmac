@@ -19,7 +19,7 @@ collections:
             widget: list
             fields:
               - {label: Skill, name: word, widget: string}
-              - {label: Icon, name: icon, widget: string, hint: "<a href='https://fontawesome.com/icons?s=solid'>List of available icons</a>"}
+              - {label: Icon, name: icon, widget: string, hint: "List of available icons: https://fontawesome.com/icons?s=solid"}
       - label: "Class List"
         name: "class-list"
         file: "assets/home-config/class-cards.json"

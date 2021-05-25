@@ -20,13 +20,13 @@
                         <icon class="fas fa-link fa-fw" title="Website"></icon>
                         {{getLinkText(card.website)}}
                     </a>
-                    <a :href="'https://www.facebook.com/' + card.facebook + '/'" v-if="card.facebook" rel="noopener">
+                    <a :href="'https://www.facebook.com/' + removeAmpersand(card.facebook) + '/'" v-if="card.facebook" rel="noopener">
                         <icon class="fab fa-facebook-square fa-fw" title="Facebook"></icon>
-                        {{card.facebook}}
+                        {{removeAmpersand(card.facebook)}}
                     </a>
-                    <a :href="'https://www.instagram.com/' + card.instagram + '/'" v-if="card.instagram" rel="noopener">
+                    <a :href="'https://www.instagram.com/' + removeAmpersand(card.instagram) + '/'" v-if="card.instagram" rel="noopener">
                         <icon class="fab fa-instagram fa-fw" title="Instagram"></icon>
-                        {{card.instagram}}
+                        {{removeAmpersand(card.instagram)}}
                     </a>
                 </div>
             </div>
@@ -46,6 +46,9 @@ export default {
             var matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
             if (!matches) return url;
             return matches[1];
+        },
+        removeAmpersand(str) {
+            return str.replace(/\@/g, '');
         }
     },
     components: {
