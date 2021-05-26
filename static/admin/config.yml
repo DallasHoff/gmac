@@ -1,23 +1,23 @@
 backend:
     name: git-gateway
     branch: master # Branch to update
-media_folder: "static/img/cms" # Media files will be stored in the repo here
-public_folder: "/img/cms" # The src attribute for uploaded media will begin with this
-logo_url: "/img/cms-logo.png" # Logo shown on CMS login page
+media_folder: static/img/cms # Media files will be stored in the repo here
+public_folder: /img/cms # The src attribute for uploaded media will begin with this
+logo_url: /img/cms-logo.png # Logo shown on CMS login page
 collections:
-  - label: "Home Configuration"
-    name: "home-config"
-    description: "Settings to change the content on the home page"
+  - label: Home Page
+    name: home-config
+    description: Change the content on the home page
     create: false
     files:
-      - label: "Article"
-        name: "article"
-        file: "content/home.md"
+      - label: Article
+        name: article
+        file: content/home.md
         fields:
-          - {label: 'Article Content', name: 'body', widget: 'markdown'}
-      - label: "Skill Cards"
-        name: "skill-cards"
-        file: "assets/home-config/skill-cards.json"
+          - {label: Article Content, name: body, widget: markdown}
+      - label: Skill Cards
+        name: skill-cards
+        file: assets/home-config/skill-cards.json
         fields:
           - label: Cards
             name: cards
@@ -25,9 +25,9 @@ collections:
             fields:
               - {label: Skill, name: word, widget: string}
               - {label: Icon, name: icon, widget: string, hint: "List of available icons: https://fontawesome.com/icons?s=solid"}
-      - label: "Class List"
-        name: "class-list"
-        file: "assets/home-config/class-cards.json"
+      - label: Class List
+        name: class-list
+        file: assets/home-config/class-cards.json
         fields:
           - label: Classes
             name: classes
@@ -41,3 +41,13 @@ collections:
               - {label: Website URL, name: website, widget: string, required: false}
               - {label: Facebook Tag, name: facebook, widget: string, required: false}
               - {label: Instagram Tag, name: instagram, widget: string, required: false}
+      - label: Announcements
+        name: announcements
+        file: assets/home-config/announcements.json
+        fields:
+          - label: Announcements
+            name: announcements
+            widget: list
+            fields:
+              - {label: Headline, name: headline, widget: string}
+              - {label: Body, name: body, widget: text, required: false}

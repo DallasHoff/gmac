@@ -2,8 +2,8 @@
     <lazy-section id="announcements" class="announcements-list" v-if="announcements.length > 0">
         <stroke-heading>Announcements</stroke-heading>
         <ul class="announcements-list__list">
-            <li class="announcements-list__item" v-for="(announcement, index) in announcements" :key="announcement[0]">
-                <b>{{announcement[0]}}<span v-if="announcement[1]">:</span></b> {{announcement[1]}}
+            <li class="announcements-list__item" v-for="(announcement, index) in announcements" :key="announcement.headline">
+                <b>{{announcement.headline}}<span v-if="announcement.body">:</span></b> {{announcement.body}}
                 <stroke-rule v-if="index < (announcements.length - 1)"></stroke-rule>
             </li>
         </ul>
@@ -14,7 +14,7 @@
 import LazySection from '~/components/LazySection.vue'
 import StrokeHeading from '~/components/StrokeHeading.vue'
 import StrokeRule from '~/components/StrokeRule.vue'
-import announcementsData from '~/static/config/announcements.json'
+import announcementsData from '~/assets/home-config/announcements.json'
 
 export default {
     data() {
@@ -23,7 +23,10 @@ export default {
         }
     },
     created() {
-        this.announcements = announcementsData.values.filter((row, index) => index > 0 && row[0]);
+        this.announcements = announcementsData.announcements.map(ann => {
+            var annCopy = {...ann};
+            return annCopy;
+        });
     },
     components: {
         LazySection,
