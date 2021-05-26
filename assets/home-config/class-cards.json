@@ -10,19 +10,19 @@
       "facebook": "GriffinTKD"
     },
     {
-      "title": "Tang Soo Do",
-      "img": "/img/cms/michelle.jpg",
-      "instructor": "Michelle Worth",
-      "experience": "5th-degree Black Belt",
-      "phone": "404-381-7273"
-    },
-    {
       "title": "Dynamic Combatives and Self-Defense",
       "img": "/img/cms/matt.jpg",
       "instructor": "Matt Clanton",
       "experience": "Krav Maga Black Belt",
       "phone": "678-485-1498",
       "website": "https://www.dcsd.info"
+    },
+    {
+      "title": "Tang Soo Do",
+      "img": "/img/cms/michelle.jpg",
+      "instructor": "Michelle Worth",
+      "experience": "5th-degree Black Belt",
+      "phone": "404-381-7273"
     },
     {
       "title": "Tai Chi",
