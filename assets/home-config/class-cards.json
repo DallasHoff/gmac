@@ -18,7 +18,7 @@
       "website": "https://www.dcsd.info"
     },
     {
-      "title": "Tang Soo Do, Little Dragons & MomFu self-defense",
+      "title": "Tang Soo Do, Little Dragons & MomFu Self-Defense",
       "img": "/img/cms/michelle.jpg",
       "instructor": "Michelle Worth",
       "experience": "5th-degree Black Belt, certified personal trainer",
@@ -30,6 +30,11 @@
       "instructor": "Stacy Hoffman",
       "experience": "TKD Black Belt, certified personal trainer",
       "phone": "678-852-4414"
+    },
+    {
+      "title": "TRX Suspension Training ",
+      "instructor": "Tracy L Waites ",
+      "facebook": "https://facebook.com/thearkkdaze"
     }
   ]
 }
