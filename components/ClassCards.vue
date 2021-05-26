@@ -16,17 +16,17 @@
                         <icon class="fas fa-phone fa-fw" title="Phone number"></icon>
                         {{card.phone}}
                     </a>
-                    <a :href="card.website" v-if="card.website" rel="noopener">
+                    <a :href="card.website" v-if="card.website" target="_blank" rel="noopener">
                         <icon class="fas fa-link fa-fw" title="Website"></icon>
                         {{getLinkText(card.website)}}
                     </a>
-                    <a :href="'https://www.facebook.com/' + removeAmpersand(card.facebook) + '/'" v-if="card.facebook" rel="noopener">
+                    <a :href="'https://www.facebook.com/' + removeAt(card.facebook) + '/'" v-if="card.facebook" target="_blank" rel="noopener">
                         <icon class="fab fa-facebook-square fa-fw" title="Facebook"></icon>
-                        {{removeAmpersand(card.facebook)}}
+                        {{removeAt(card.facebook)}}
                     </a>
-                    <a :href="'https://www.instagram.com/' + removeAmpersand(card.instagram) + '/'" v-if="card.instagram" rel="noopener">
+                    <a :href="'https://www.instagram.com/' + removeAt(card.instagram) + '/'" v-if="card.instagram" target="_blank" rel="noopener">
                         <icon class="fab fa-instagram fa-fw" title="Instagram"></icon>
-                        {{removeAmpersand(card.instagram)}}
+                        {{removeAt(card.instagram)}}
                     </a>
                 </div>
             </div>
@@ -47,7 +47,7 @@ export default {
             if (!matches) return url;
             return matches[1];
         },
-        removeAmpersand(str) {
+        removeAt(str) {
             return str.replace(/\@/g, '');
         }
     },
