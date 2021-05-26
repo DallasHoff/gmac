@@ -2,7 +2,7 @@
     <ul class="class-cards">
         <li class="class-cards__class" :class="{'class-cards__class--invisible': shown === false}" v-for="(card, index) in cards" :key="card.title" :style="{'transition-delay': (index * 100) + 'ms'}">
             <figure class="class-cards__figure" v-if="card.img">
-                <img :src="require('~/assets' + card.img)" alt="">
+                <img :src="require('~/assets' + card.img + '?resize&size=150')" alt="">
             </figure>
             <div>
                 <h3>

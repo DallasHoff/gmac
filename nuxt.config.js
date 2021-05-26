@@ -78,6 +78,9 @@ export default {
         '@nuxtjs/axios',
         '@nuxt/content'
     ],
+    buildModules: [
+        '@aceforth/nuxt-optimized-images'
+    ],
 
     /*
     ** Build configuration
