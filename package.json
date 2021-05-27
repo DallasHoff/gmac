@@ -12,8 +12,7 @@
         "serve": "nuxt",
         "build": "nuxt build",
         "start": "nuxt start",
-        "generate": "nuxt generate",
-        "deploy": "node fetchSheetConfig.js && nuxt generate"
+        "generate": "nuxt generate"
     },
     "config": {
         "nuxt": {
