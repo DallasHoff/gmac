@@ -1,15 +1,15 @@
 <template>
     <header class="hero-header" :class="{'hero-header--full-view': fullView}">
         <picture class="hero-header__picture" v-if="!fullView">
-            <source :srcset="carousel.path + 'full/' + carousel.bgPhoto + '.' + carousel.ext" :media="mediaPoints.full" />
-            <source :srcset="carousel.path + 'mid/' + carousel.bgPhoto + '.' + carousel.ext" :media="mediaPoints.mid" />
-            <img :src="carousel.path + 'thumb/' + carousel.bgPhoto + '.' + carousel.ext" alt="" />
+            <source :srcset="require('~/assets' + carouselPhotos[0] + '?resize&size=2000')" :media="mediaPoints.full" />
+            <source :srcset="require('~/assets' + carouselPhotos[0] + '?resize&size=1000')" :media="mediaPoints.mid" />
+            <img :src="require('~/assets' + carouselPhotos[0] + '?resize&size=300')" alt="" />
         </picture>
         <flickity ref="carousel" :options="flickityOptions" class="hero-header__gallery" v-else>
-            <picture class="hero-header__picture" v-for="(photo, index) in carousel.photos" :key="photo">
-                <source :srcset="carousel.path + 'full/' + photo + '.' + carousel.ext" :media="mediaPoints.full" />
-                <source :srcset="carousel.path + 'mid/' + photo + '.' + carousel.ext" :media="mediaPoints.mid" />
-                <img :src="carousel.path + 'thumb/' + photo + '.' + carousel.ext" :alt="carousel.alts[index] || ''" />
+            <picture class="hero-header__picture" v-for="(photo, index) in carouselPhotos" :key="photo">
+                <source :srcset="require('~/assets' + photo + '?resize&size=2000')" :media="mediaPoints.full" />
+                <source :srcset="require('~/assets' + photo + '?resize&size=1000')" :media="mediaPoints.mid" />
+                <img :src="require('~/assets' + photo + '?resize&size=300')" alt="" />
             </picture>
         </flickity>
         <div class="hero-header__inner">
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    props: ['fullView', 'carousel', 'photoIndex'],
+    props: ['fullView', 'carouselPhotos', 'photoIndex'],
     data() {
         return {
             mediaPoints: {

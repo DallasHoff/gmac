@@ -1,14 +1,14 @@
 <template>
     <section class="carousel-thumbs">
-        <figure v-for="(image, index) in carousel.photos" :key="image" @click="$emit('viewing-photo', index)" @keyup.enter="$emit('viewing-photo', index)" class="carousel-thumbs__thumbnail" :class="{'carousel-thumbs__thumbnail--active': photoIndex === index}" tabindex="0">
-            <img :src="carousel.path + 'thumb/' + carousel.photos[index] + '.' + carousel.ext" :alt="carousel.alts[index]" />
+        <figure v-for="(image, index) in carouselPhotos" :key="image" @click="$emit('viewing-photo', index)" @keyup.enter="$emit('viewing-photo', index)" class="carousel-thumbs__thumbnail" :class="{'carousel-thumbs__thumbnail--active': photoIndex === index}" tabindex="0">
+            <img :src="require('~/assets' + carouselPhotos[index] + '?resize&size=300')" alt="" />
         </figure>
     </section>
 </template>
 
 <script>
 export default {
-    props: ['carousel', 'photoIndex']
+    props: ['carouselPhotos', 'photoIndex']
 }
 </script>
 

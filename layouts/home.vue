@@ -1,12 +1,12 @@
 <template>
     <div class="layout-home">
-        <hero-header :carousel="carousel" :photo-index="photoIndex" :full-view="viewingPhotos" @viewing-photo="viewPhoto">
+        <hero-header :carousel-photos="carouselPhotos" :photo-index="photoIndex" :full-view="viewingPhotos" @viewing-photo="viewPhoto">
             <transition name="v-fade" mode="out-in">
                 <app-navbar v-if="viewingPhotos"></app-navbar>
                 <hero-logo v-else></hero-logo>
             </transition>
         </hero-header>
-        <carousel-thumbs :carousel="carousel" :photo-index="photoIndex" @viewing-photo="viewPhoto"></carousel-thumbs>
+        <carousel-thumbs :carousel-photos="carouselPhotos" :photo-index="photoIndex" @viewing-photo="viewPhoto"></carousel-thumbs>
         <main class="layout-home__main">
             <div class="layout-home__main-inner">
                 <article class="layout-home__page">
@@ -44,13 +44,7 @@ export default {
         return {
             viewingPhotos: false,
             photoIndex: null,
-            carousel: {
-                path: '/img/photos/',
-                photos: ['15', '2', '14', '10', '11', '8', '12', '6', '13', '7', '9'],
-                bgPhoto: '15',
-                alts: ['', '', '', '', '', '', '', '', '', '', ''],
-                ext: 'jpg'
-            }
+            carouselPhotos: ['/img/cms/home-15.jpg', '/img/cms/home-2.jpg', '/img/cms/home-14.jpg', '/img/cms/home-10.jpg', '/img/cms/home-11.jpg', '/img/cms/home-8.jpg', '/img/cms/home-12.jpg', '/img/cms/home-6.jpg', '/img/cms/home-13.jpg', '/img/cms/home-7.jpg', '/img/cms/home-9.jpg']
         }
     },
     methods: {
