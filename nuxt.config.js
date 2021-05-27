@@ -1,6 +1,3 @@
-import pkg from './package'
-
-
 const siteTitle = 'Griffin Martial Arts Center - Martial Arts School in Griffin, Georgia';
 const siteDescription = 'Griffin Martial Arts Center is a martial arts school for ages 6+ located in Griffin, Georgia.';
 
@@ -75,7 +72,6 @@ export default {
     ** Nuxt.js modules
     */
     modules: [
-        '@nuxtjs/axios',
         '@nuxt/content'
     ],
     buildModules: [
