@@ -24,9 +24,8 @@ collections:
       - label: Article
         name: article
         file: content/home.md
-        hint: Briefly introduce visitors to the business
         fields:
-          - {label: Article Content, name: body, widget: markdown}
+          - {label: Article Content, name: body, widget: markdown, hint: Briefly introduce visitors to the business}
       - label: Skill Cards
         name: skill-cards
         file: assets/home-config/skill-cards.json
@@ -61,5 +60,5 @@ collections:
             name: rows
             widget: list
             fields:
-              - {label: Day(s), name: days, widget: text}
-              - {label: Times, name: times, widget: text}
+              - {label: Day(s), name: days, widget: string}
+              - {label: Times, name: times, widget: string}
