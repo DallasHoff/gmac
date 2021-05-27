@@ -1,7 +1,7 @@
 <template>
     <nav class="app-navbar">
         <nuxt-link to="/" class="app-navbar__wordmark">
-            <img src="@/assets/img/griffin_logo_red.svg" alt="" class="app-navbar__wordmark-logo" />
+            <img src="@/assets/img/griffin_logo_red.svg" alt="" class="app-navbar__wordmark-logo" width="1161" height="1124" />
             <h2 class="app-navbar__wordmark-heading">Griffin Martial Arts Center</h2>
         </nuxt-link>
         <div class="app-navbar__pages">

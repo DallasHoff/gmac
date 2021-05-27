@@ -12,7 +12,7 @@
                 </div>
             </transition>
         </h1>
-        <img src="@/assets/img/griffin_logo_red.svg" alt="Griffin logo" class="hero-logo__logo" />
+        <img src="@/assets/img/griffin_logo_red.svg" alt="Griffin logo" class="hero-logo__logo" width="1161" height="1124" />
     </div>
 </template>
 
