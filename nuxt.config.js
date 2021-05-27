@@ -78,6 +78,11 @@ export default {
         '@aceforth/nuxt-optimized-images'
     ],
 
+    // nuxt-optimized-images configuration
+    optimizedImages: {
+        handleImages: ['jpeg', 'png', 'webp', 'gif']
+    },
+
     /*
     ** Build configuration
     */
@@ -86,6 +91,18 @@ export default {
         ** You can extend webpack config here
         */
         extend(config, ctx) {
+            // Set SVG loader back to Nuxt's default so that responsive-loader does not try to handle it
+            config.module.rules.push({
+                test: /\.svg$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        esModule: false,
+                        limit: 1000,
+                        name: 'img/[name].[contenthash:7].[ext]'
+                    }
+                }]
+            });
         }
     }
 }
