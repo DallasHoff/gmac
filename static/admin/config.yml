@@ -10,9 +10,21 @@ collections:
     description: Change the content on the home page
     create: false
     files:
+      - label: Announcements
+        name: announcements
+        file: assets/home-config/announcements.json
+        fields:
+          - label: Announcements
+            name: announcements
+            widget: list
+            hint: Let visitors know about special events, closures, etc.
+            fields:
+              - {label: Headline, name: headline, widget: string}
+              - {label: Body, name: body, widget: text, required: false}
       - label: Article
         name: article
         file: content/home.md
+        hint: Briefly introduce visitors to the business
         fields:
           - {label: Article Content, name: body, widget: markdown}
       - label: Skill Cards
@@ -41,13 +53,13 @@ collections:
               - {label: Website URL, name: website, widget: string, required: false}
               - {label: Facebook Tag, name: facebook, widget: string, required: false}
               - {label: Instagram Tag, name: instagram, widget: string, required: false}
-      - label: Announcements
-        name: announcements
-        file: assets/home-config/announcements.json
+      - label: Hours
+        name: hours
+        file: assets/home-config/hours.json
         fields:
-          - label: Announcements
-            name: announcements
+          - label: Rows
+            name: rows
             widget: list
             fields:
-              - {label: Headline, name: headline, widget: string}
-              - {label: Body, name: body, widget: text, required: false}
+              - {label: Day(s), name: days, widget: text}
+              - {label: Times, name: times, widget: text}

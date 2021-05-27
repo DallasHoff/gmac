@@ -3,9 +3,9 @@
         <stroke-heading>Gym Hours</stroke-heading>
         <table class="schedule-info__table">
             <tbody>
-                <tr v-for="day in schedule" :key="day[0]">
-                    <th>{{day[0]}}</th>
-                    <td>{{day[1]}}</td>
+                <tr v-for="row in schedule" :key="row.days">
+                    <th>{{row.days}}</th>
+                    <td>{{row.times}}</td>
                 </tr>
             </tbody>
         </table>
@@ -15,7 +15,7 @@
 <script>
 import LazySection from '~/components/LazySection.vue'
 import StrokeHeading from '~/components/StrokeHeading.vue'
-import scheduleData from '~/static/config/schedule.json'
+import scheduleData from '~/assets/home-config/hours.json'
 
 export default {
     data() {
@@ -24,13 +24,10 @@ export default {
         }
     },
     created() {
-        this.schedule = scheduleData.values.filter((row, index) => index > 0 && row[0] && row[1]);
-        /* Hard-coded schedule data
-        this.schedule = [
-            ['Monday - Friday', '6:00 am - 10:00 pm'],
-            ['Saturday', '6:00 am - 1:00 pm'],
-            ['Sunday', 'Closed']
-        ]; */
+        this.schedule = scheduleData.rows.map(row => {
+            var rowCopy = {...row};
+            return rowCopy;
+        });
     },
     components: {
         LazySection,
