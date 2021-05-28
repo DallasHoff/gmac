@@ -20,19 +20,25 @@ export default {
     align-items: center;
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
+    overflow-y: hidden;
     background-color: $subtle;
     &__thumbnail {
-        flex: 1 0 auto;
         filter: saturate(0%) brightness(145%) contrast(70%);
         transition: filter 400ms;
         cursor: pointer;
         img {
-            width: 100%;
-            max-width: 34vw;
-            height: auto;
+            width: auto;
+            height: 18vh;
+            max-height: 250px;
         }
         &:hover, &:focus, &--active {
             filter: none;
+        }
+        &:first-child {
+            margin-left: auto;
+        }
+        &:last-child {
+            margin-right: auto;
         }
     }
 }
