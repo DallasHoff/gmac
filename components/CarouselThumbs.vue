@@ -1,7 +1,7 @@
 <template>
     <section class="carousel-thumbs">
-        <figure v-for="(image, index) in carouselPhotos" :key="image" @click="$emit('viewing-photo', index)" @keyup.enter="$emit('viewing-photo', index)" class="carousel-thumbs__thumbnail" :class="{'carousel-thumbs__thumbnail--active': photoIndex === index}" tabindex="0">
-            <img :src="require('~/assets' + carouselPhotos[index] + '?resize&size=300')" alt="" />
+        <figure v-for="(photo, index) in carouselPhotos" :key="photo.path" @click="$emit('viewing-photo', index)" @keyup.enter="$emit('viewing-photo', index)" class="carousel-thumbs__thumbnail" :class="{'carousel-thumbs__thumbnail--active': photoIndex === index}" tabindex="0">
+            <img :src="require('~/assets' + photo.path + '?resize&size=300')" :alt="photo.alt" />
         </figure>
     </section>
 </template>

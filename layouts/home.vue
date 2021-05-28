@@ -6,7 +6,7 @@
                 <hero-logo v-else></hero-logo>
             </transition>
         </hero-header>
-        <carousel-thumbs :carousel-photos="carouselPhotos" :photo-index="photoIndex" @viewing-photo="viewPhoto"></carousel-thumbs>
+        <carousel-thumbs :carousel-photos="carouselPhotos" :photo-index="photoIndex" @viewing-photo="viewPhoto" v-if="showThumbs"></carousel-thumbs>
         <main class="layout-home__main">
             <div class="layout-home__main-inner">
                 <article class="layout-home__page">
@@ -38,19 +38,36 @@ import AddressInfo from '~/components/AddressInfo.vue'
 import ScheduleInfo from '~/components/ScheduleInfo.vue'
 import CalendarInfo from '~/components/CalendarInfo.vue'
 import AppFooter from '~/components/AppFooter.vue'
+import carouselData from '~/assets/home-config/carousel.json'
 
 export default {
     data() {
         return {
             viewingPhotos: false,
+            showThumbs: true,
             photoIndex: null,
-            carouselPhotos: ['/img/cms/home-15.jpg', '/img/cms/home-2.jpg', '/img/cms/home-14.jpg', '/img/cms/home-10.jpg', '/img/cms/home-11.jpg', '/img/cms/home-8.jpg', '/img/cms/home-12.jpg', '/img/cms/home-6.jpg', '/img/cms/home-13.jpg', '/img/cms/home-7.jpg', '/img/cms/home-9.jpg']
+            carouselPhotos: []
         }
     },
     methods: {
         viewPhoto(payload) {
             this.viewingPhotos = true;
             this.photoIndex = payload;
+        }
+    },
+    created() {
+        this.carouselPhotos = carouselData.images.map(img => {
+            var imgCopy = {...img};
+            return imgCopy;
+        });
+        if (this.carouselPhotos.length < 1) {
+            this.carouselPhotos = [
+                {
+                    path: '/img/griffin_logo.svg',
+                    alt: ''
+                }
+            ];
+            this.showThumbs = false;
         }
     },
     components: {

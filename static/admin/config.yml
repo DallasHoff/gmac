@@ -21,6 +21,17 @@ collections:
             fields:
               - {label: Headline, name: headline, widget: string}
               - {label: Body, name: body, widget: text, required: false}
+      - label: Carousel Photos
+        name: carousel-photos
+        file: assets/home-config/carousel.json
+        fields:
+          - label: Photos
+            name: images
+            widget: list
+            hint: A set of photos to display at the top of the page
+            fields:
+              - {label: Photo, name: path, widget: image, allow_multiple: false, hint: Use photos that are at least 2000 pixels wide to ensure that they look good on any size screen}
+              - {label: Accessibility Description, name: alt, widget: string, hint: Briefly describe what is in this photo}
       - label: Article
         name: article
         file: content/home.md

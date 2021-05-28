@@ -1,15 +1,15 @@
 <template>
     <header class="hero-header" :class="{'hero-header--full-view': fullView}">
         <picture class="hero-header__picture" v-if="!fullView">
-            <source :srcset="require('~/assets' + carouselPhotos[0] + '?resize&size=2000')" :media="mediaPoints.full" />
-            <source :srcset="require('~/assets' + carouselPhotos[0] + '?resize&size=1000')" :media="mediaPoints.mid" />
-            <img :src="require('~/assets' + carouselPhotos[0] + '?resize&size=300')" alt="" />
+            <source :srcset="require('~/assets' + carouselPhotos[0].path + '?resize&size=2000')" :media="mediaPoints.full" />
+            <source :srcset="require('~/assets' + carouselPhotos[0].path + '?resize&size=1000')" :media="mediaPoints.mid" />
+            <img :src="require('~/assets' + carouselPhotos[0].path + '?resize&size=300')" :alt="carouselPhotos[0].alt" />
         </picture>
         <flickity ref="carousel" :options="flickityOptions" class="hero-header__gallery" v-else>
-            <picture class="hero-header__picture" v-for="(photo, index) in carouselPhotos" :key="photo">
-                <source :srcset="require('~/assets' + photo + '?resize&size=2000')" :media="mediaPoints.full" />
-                <source :srcset="require('~/assets' + photo + '?resize&size=1000')" :media="mediaPoints.mid" />
-                <img :src="require('~/assets' + photo + '?resize&size=300')" alt="" />
+            <picture class="hero-header__picture" v-for="(photo, index) in carouselPhotos" :key="photo.path">
+                <source :srcset="require('~/assets' + photo.path + '?resize&size=2000')" :media="mediaPoints.full" />
+                <source :srcset="require('~/assets' + photo.path + '?resize&size=1000')" :media="mediaPoints.mid" />
+                <img :src="require('~/assets' + photo.path + '?resize&size=300')" :alt="photo.alt" />
             </picture>
         </flickity>
         <div class="hero-header__inner">
