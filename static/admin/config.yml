@@ -30,8 +30,8 @@ collections:
             widget: list
             hint: A set of photos to display at the top of the page
             fields:
-              - {label: Photo, name: path, widget: image, allow_multiple: false, hint: Use photos that are at least 2000 pixels wide to ensure that they look good on any size screen}
               - {label: Accessibility Description, name: alt, widget: string, hint: Briefly describe what is in this photo}
+              - {label: Photo, name: path, widget: image, allow_multiple: false, hint: Use photos that are at least 2000 pixels wide to ensure that they look good on any size screen}
       - label: Article
         name: article
         file: content/home.md
