@@ -5,13 +5,13 @@
 				<span class="app-footer__connect-icon">
 					<icon class="fab fa-facebook-square fa-fw" title="Facebook page"></icon>
 				</span>
-				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">@GriffinMartialArtsCenter</a>
+				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">GriffinMartialArtsCenter</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
 					<icon class="fab fa-instagram fa-fw" title="Instagram page"></icon>
 				</span>
-				<a href="https://www.instagram.com/gmac1454/" rel="noopener" target="_blank">@gmac1454</a>
+				<a href="https://www.instagram.com/gmac1454/" rel="noopener" target="_blank">gmac1454</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
