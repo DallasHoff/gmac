@@ -17,7 +17,7 @@
 				<span class="app-footer__connect-icon">
 					<icon class="fas fa-envelope fa-fw" title="Email address"></icon>
 				</span>
-				<a href="mailto:eric@griffindojo.com" rel="noopener" target="_top">eric@griffindojo.com</a>
+				<a href="mailto:contact@griffindojo.com" rel="noopener" target="_top">contact@griffindojo.com</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
