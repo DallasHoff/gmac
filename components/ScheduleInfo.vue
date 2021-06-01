@@ -15,19 +15,17 @@
 <script>
 import LazySection from '~/components/LazySection.vue'
 import StrokeHeading from '~/components/StrokeHeading.vue'
-import scheduleData from '~/assets/home-config/hours.json'
 
 export default {
+    name: 'ScheduleInfo',
     data() {
         return {
             schedule: []
         }
     },
-    created() {
-        this.schedule = scheduleData.rows.map(row => {
-            var rowCopy = {...row};
-            return rowCopy;
-        });
+    async fetch() {
+        const { rows } = await this.$content('/home-config/hours').fetch();
+        this.schedule = rows;
     },
     components: {
         LazySection,
@@ -35,7 +33,6 @@ export default {
     }
 }
 </script>
-
 
 <style lang="scss">
 @import "~/assets/_theme.scss";

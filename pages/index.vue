@@ -24,9 +24,6 @@ import ClassCards from '~/components/ClassCards.vue'
 import WordCards from '~/components/WordCards.vue'
 import ResourcesList from '~/components/ResourcesList.vue'
 
-import skillCardsData from '~/assets/home-config/skill-cards.json'
-import classCardsData from '~/assets/home-config/class-cards.json'
-
 export default {
     layout: 'home',
     data() {
@@ -34,9 +31,7 @@ export default {
             shown: {
                 classCards: true,
                 teachesCards: true
-            },
-            classCards: [],
-            skillCards: []
+            }
         }
     },
     head() {
@@ -47,22 +42,24 @@ export default {
         }
     },
     async asyncData({$content}) {
+        // Fetch article
         const article = await $content('/home').fetch();
-        return {article};
-    },
-    created() {
         // Fetch skill cards config
-        this.skillCards = skillCardsData.cards.map(card => {
-            var cardCopy = {...card};
-            var iconKey = cardCopy.icon;
+        let { cards: skillCards } = await $content('/home-config/skill-cards').fetch();
+        skillCards = skillCards.map(card => {
+            let cardCopy = {...card};
+            let iconKey = cardCopy.icon;
             cardCopy.icon = ['fas', 'fa-' + iconKey];
             return cardCopy;
         });
         // Fetch class cards config
-        this.classCards = classCardsData.classes.map(card => {
-            var cardCopy = {...card};
-            return cardCopy;
-        });
+        const { classes: classCards } = await $content('/home-config/class-cards').fetch();
+        // Merge into data
+        return {
+            article,
+            classCards,
+            skillCards
+        };
     },
     mounted() {
         this.shown = {

@@ -12,7 +12,7 @@ collections:
     files:
       - label: Announcements
         name: announcements
-        file: assets/home-config/announcements.json
+        file: content/home-config/announcements.json
         fields:
           - label: Announcements
             name: announcements
@@ -23,7 +23,7 @@ collections:
               - {label: Body, name: body, widget: text, required: false}
       - label: Carousel Photos
         name: carousel-photos
-        file: assets/home-config/carousel.json
+        file: content/home-config/carousel.json
         fields:
           - label: Photos
             name: images
@@ -39,7 +39,7 @@ collections:
           - {label: Article Content, name: body, widget: markdown, hint: Briefly introduce visitors to the business}
       - label: Skill Cards
         name: skill-cards
-        file: assets/home-config/skill-cards.json
+        file: content/home-config/skill-cards.json
         fields:
           - label: Cards
             name: cards
@@ -49,7 +49,7 @@ collections:
               - {label: Icon, name: icon, widget: string, hint: "List of available icons: https://fontawesome.com/icons?s=solid"}
       - label: Class List
         name: class-list
-        file: assets/home-config/class-cards.json
+        file: content/home-config/class-cards.json
         fields:
           - label: Classes
             name: classes
@@ -65,7 +65,7 @@ collections:
               - {label: Instagram Tag, name: instagram, widget: string, required: false}
       - label: Hours
         name: hours
-        file: assets/home-config/hours.json
+        file: content/home-config/hours.json
         fields:
           - label: Rows
             name: rows

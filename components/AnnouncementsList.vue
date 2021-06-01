@@ -14,19 +14,17 @@
 import LazySection from '~/components/LazySection.vue'
 import StrokeHeading from '~/components/StrokeHeading.vue'
 import StrokeRule from '~/components/StrokeRule.vue'
-import announcementsData from '~/assets/home-config/announcements.json'
 
 export default {
+    name: 'AnnouncementsList',
     data() {
         return {
             announcements: []
         }
     },
-    created() {
-        this.announcements = announcementsData.announcements.map(ann => {
-            var annCopy = {...ann};
-            return annCopy;
-        });
+    async fetch() {
+        const { announcements } = await this.$content('/home-config/announcements').fetch();
+        this.announcements = announcements;
     },
     components: {
         LazySection,
@@ -35,7 +33,6 @@ export default {
     }
 }
 </script>
-
 
 <style lang="scss">
 @import "~/assets/_theme.scss";

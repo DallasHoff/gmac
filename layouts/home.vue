@@ -38,15 +38,20 @@ import AddressInfo from '~/components/AddressInfo.vue'
 import ScheduleInfo from '~/components/ScheduleInfo.vue'
 import CalendarInfo from '~/components/CalendarInfo.vue'
 import AppFooter from '~/components/AppFooter.vue'
-import carouselData from '~/assets/home-config/carousel.json'
 
 export default {
+    name: 'LayoutHome',
     data() {
         return {
             viewingPhotos: false,
-            showThumbs: true,
+            showThumbs: false,
             photoIndex: null,
-            carouselPhotos: []
+            carouselPhotos: [
+                {
+                    path: '/img/griffin_logo.svg',
+                    alt: ''
+                }
+            ]
         }
     },
     methods: {
@@ -55,19 +60,11 @@ export default {
             this.photoIndex = payload;
         }
     },
-    created() {
-        this.carouselPhotos = carouselData.images.map(img => {
-            var imgCopy = {...img};
-            return imgCopy;
-        });
-        if (this.carouselPhotos.length < 1) {
-            this.carouselPhotos = [
-                {
-                    path: '/img/griffin_logo.svg',
-                    alt: ''
-                }
-            ];
-            this.showThumbs = false;
+    async fetch() {
+        const { images } = await this.$content('/home-config/carousel').fetch();
+        if (images.length > 0) {
+            this.carouselPhotos = images;
+            this.showThumbs = true;
         }
     },
     components: {
