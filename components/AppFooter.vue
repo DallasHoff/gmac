@@ -34,6 +34,7 @@
 import Icon from '~/components/Icon.vue'
 
 export default {
+    name: 'AppFooter',
 	computed: {
 		currentYear() {
 			return new Date().getFullYear();

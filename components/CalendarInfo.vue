@@ -15,6 +15,7 @@ import StrokeHeading from '~/components/StrokeHeading.vue'
 import Icon from '~/components/Icon.vue'
 
 export default {
+    name: 'CalendarInfo',
     components: {
         LazySection,
         StrokeHeading,

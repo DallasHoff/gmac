@@ -12,6 +12,7 @@
 import VueIntersect from '~/components/VueIntersect.vue'
 
 export default {
+    name: 'LazySection',
     data() {
         return {
             isShown: true

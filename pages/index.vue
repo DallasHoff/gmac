@@ -25,6 +25,7 @@ import WordCards from '~/components/WordCards.vue'
 import ResourcesList from '~/components/ResourcesList.vue'
 
 export default {
+    name: 'PageHome',
     layout: 'home',
     data() {
         return {

@@ -38,6 +38,7 @@
 import Icon from '~/components/Icon.vue'
 
 export default {
+    name: 'ClassCards',
     props: ['cards', 'shown'],
     methods: {
         getLinkText(url) {

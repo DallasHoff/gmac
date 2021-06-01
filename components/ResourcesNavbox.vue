@@ -9,6 +9,7 @@
 import ResourcesList from '~/components/ResourcesList.vue'
 
 export default {
+    name: 'ResourcesNavbox',
     components: {
         ResourcesList
     }

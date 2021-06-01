@@ -11,7 +11,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+    name: 'AppNavbar'
+}
 </script>
 
 <style lang="scss">

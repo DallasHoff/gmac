@@ -20,6 +20,7 @@
 
 <script>
 export default {
+    name: 'HeroHeader',
     props: ['fullView', 'carouselPhotos', 'photoIndex'],
     data() {
         return {

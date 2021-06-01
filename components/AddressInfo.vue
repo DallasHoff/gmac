@@ -14,6 +14,7 @@ import LazySection from '~/components/LazySection.vue'
 import StrokeHeading from '~/components/StrokeHeading.vue'
 
 export default {
+    name: 'AddressInfo',
     components: {
         LazySection,
         StrokeHeading

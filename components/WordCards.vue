@@ -11,6 +11,7 @@
 import Icon from '~/components/Icon.vue'
 
 export default {
+    name: 'WordCards',
     props: ['cards', 'shown'],
     components: {
         Icon

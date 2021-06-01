@@ -14,6 +14,7 @@
 
 <script>
 export default {
+    name: 'PhotoCards',
     props: ['cards', 'shown']
 }
 </script>
