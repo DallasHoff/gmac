@@ -15,6 +15,7 @@ collections:
         file: content/home-config/announcements.json
         fields:
           - label: Announcements
+            label_singular: Announcement
             name: announcements
             widget: list
             hint: Let visitors know about special events, closures, etc.
@@ -26,6 +27,7 @@ collections:
         file: content/home-config/carousel.json
         fields:
           - label: Photos
+            label_singular: Photo
             name: images
             widget: list
             hint: A set of photos to display at the top of the page
@@ -42,6 +44,7 @@ collections:
         file: content/home-config/skill-cards.json
         fields:
           - label: Cards
+            label_singular: Card
             name: cards
             widget: list
             fields:
@@ -52,9 +55,11 @@ collections:
         file: content/home-config/class-list.json
         fields:
           - label: Classes
+            label_singular: Class
             name: classes
             widget: list
             hint: Choose which classes are listed on the home page and in what order
+            collapsed: false
             field:
               label: Class
               name: class
@@ -68,6 +73,7 @@ collections:
         file: content/home-config/hours.json
         fields:
           - label: Rows
+            label_singular: Row
             name: rows
             widget: list
             fields:
