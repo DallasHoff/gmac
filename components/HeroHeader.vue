@@ -9,7 +9,7 @@
             <picture class="hero-header__picture" v-for="(photo, index) in carouselPhotos" :key="photo.path">
                 <source :srcset="require('~/assets' + photo.path + '?resize&size=2000')" :media="mediaPoints.full" />
                 <source :srcset="require('~/assets' + photo.path + '?resize&size=1000')" :media="mediaPoints.mid" />
-                <img :src="require('~/assets' + photo.path + '?resize&size=300')" :alt="photo.alt" />
+                <img :src="require('~/assets' + photo.path + '?resize&size=300')" :alt="photo.alt" @load="resize()" />
             </picture>
         </flickity>
         <div class="hero-header__inner">
@@ -29,10 +29,10 @@ export default {
                 mid: '(min-width: 320px)'
             },
             flickityOptions: {
-                prevNextButtons: false,
                 pageDots: false,
                 setGallerySize: false,
                 contain: true,
+                wrapAround: true,
                 on: {
                     ready: () => {
                         this.$nextTick(() => {
@@ -55,6 +55,13 @@ export default {
                 if (this.$refs.carousel) {
                     this.$refs.carousel.select(n);
                 }
+            }
+        },
+    },
+    methods: {
+        resize() {
+            if (this.$refs.carousel) {
+                this.$refs.carousel.resize();
             }
         }
     }
@@ -114,7 +121,10 @@ export default {
         height: calc(62.5vw - #{$gap3});
         max-height: 85vh;
         .hero-header__picture {
+            width: auto;
+            max-width: 2000px;
             img {
+                width: auto;
                 object-position: center center;
                 filter: none;
                 opacity: 1;
@@ -123,6 +133,14 @@ export default {
         &::before {
             opacity: 1;
         }
+    }
+    .flickity-prev-next-button {
+        min-width: 2em;
+        min-height: 2em;
+        width: 8vw;
+        height: 8vw;
+        max-width: 3.5em;
+        max-height: 3.5em;
     }
     .app-navbar__wordmark-heading {
         color: white;
