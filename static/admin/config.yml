@@ -74,9 +74,11 @@ collections:
               - {label: Day(s), name: days, widget: string}
               - {label: Times, name: times, widget: string}
   - label: Classes
+    label_singular: Class
     name: classes
     description: Enter information to be displayed about the classes offered
     folder: content/classes
+    extension: json
     create: true
     fields:
       - {label: Class Name, name: title, widget: string}
