@@ -55,7 +55,7 @@ export default {
         });
         // Fetch class cards config
         const { classes: classSlugs } = await $content('/home-config/class-list').fetch();
-        const classData = await $content('/classes').where({slug: {$in: classSlugs}}).fetch();
+        const classData = await $content('/classes').where({slug: {$in: classSlugs}}).without(['body']).fetch();
         const classCards = classSlugs.map(slug => {
             return classData.find(c => c.slug === slug);
         });
