@@ -1,48 +1,48 @@
 {
-    "images": [
-        {
-            "path": "/img/cms/home-15.jpg",
-            "alt": "The Tae Kwon-Do class and instructors"
-        },
-        {
-            "path": "/img/cms/home-2.jpg",
-            "alt": "An instructor demonstrating a move"
-        },
-        {
-            "path": "/img/cms/home-14.jpg",
-            "alt": "Two students sparring each other"
-        },
-        {
-            "path": "/img/cms/home-10.jpg",
-            "alt": "A class lined up for drills"
-        },
-        {
-            "path": "/img/cms/home-11.jpg",
-            "alt": "A student performing a block"
-        },
-        {
-            "path": "/img/cms/home-8.jpg",
-            "alt": "A student and instructor performing balance exercises"
-        },
-        {
-            "path": "/img/cms/home-12.jpg",
-            "alt": "Some students stretching"
-        },
-        {
-            "path": "/img/cms/home-6.jpg",
-            "alt": "A class practicing sparring moves"
-        },
-        {
-            "path": "/img/cms/home-13.jpg",
-            "alt": "A student wearing sparring gear"
-        },
-        {
-            "path": "/img/cms/home-7.jpg",
-            "alt": "A class practicing kicks"
-        },
-        {
-            "path": "/img/cms/home-9.jpg",
-            "alt": "Many students from different schools lined up in a regional tournament"
-        }
-    ]
+  "images": [
+    {
+      "path": "/img/cms/43a33e12-7458-4ed7-9798-eb8bc3c4509e.jpeg",
+      "alt": "TKD class demo"
+    },
+    {
+      "path": "/img/cms/home-14.jpg",
+      "alt": "Two students sparring each other"
+    },
+    {
+      "path": "/img/cms/e5eab23f-e25a-48c8-875a-6e1842b8f19a.jpeg",
+      "alt": "Matt demos takedown"
+    },
+    {
+      "path": "/img/cms/6ab7655e-8561-404f-ab9e-e705d5d570e2.jpeg",
+      "alt": "A Little Dragon w/ Michelle "
+    },
+    {
+      "path": "/img/cms/home-8.jpg",
+      "alt": "A student and instructor performing balance exercises"
+    },
+    {
+      "path": "/img/cms/a9b8ee0e-5670-4c81-a990-3b8d5e39d5ea.jpeg",
+      "alt": "TSD demo "
+    },
+    {
+      "path": "/img/cms/946a698e-9f7a-41a2-90c4-6b1ea843eee5.jpeg",
+      "alt": "Ten boards prep"
+    },
+    {
+      "path": "/img/cms/73e60c47-5c8f-428f-8af2-c61d9626560a.jpeg",
+      "alt": "Breaking ten boards"
+    },
+    {
+      "path": "/img/cms/3f6fcc56-e60f-481e-b1dd-9e22381a4190.jpeg",
+      "alt": "TSD future blackbelts class"
+    },
+    {
+      "path": "/img/cms/home-7.jpg",
+      "alt": "A class practicing kicks"
+    },
+    {
+      "path": "/img/cms/home-9.jpg",
+      "alt": "Many students from different schools lined up in a regional tournament"
+    }
+  ]
 }
