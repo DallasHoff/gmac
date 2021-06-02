@@ -95,3 +95,4 @@ collections:
       - {label: Website URL, name: website, widget: string, required: false}
       - {label: Facebook Tag, name: facebook, widget: string, required: false}
       - {label: Instagram Tag, name: instagram, widget: string, required: false}
+      - {label: About the Class, name: body, widget: markdown, required: false}
