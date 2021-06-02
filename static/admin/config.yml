@@ -49,20 +49,20 @@ collections:
               - {label: Icon, name: icon, widget: string, hint: "List of available icons: https://fontawesome.com/icons?s=solid"}
       - label: Class List
         name: class-list
-        file: content/home-config/class-cards.json
+        file: content/home-config/class-list.json
         fields:
           - label: Classes
             name: classes
             widget: list
-            fields:
-              - {label: Class Name, name: title, widget: string}
-              - {label: Photo, name: img, widget: image, allow_multiple: false, required: false}
-              - {label: Instructor Name, name: instructor, widget: string}
-              - {label: Instructor Experience, name: experience, widget: string, required: false}
-              - {label: Phone Number, name: phone, widget: string, required: false}
-              - {label: Website URL, name: website, widget: string, required: false}
-              - {label: Facebook Tag, name: facebook, widget: string, required: false}
-              - {label: Instagram Tag, name: instagram, widget: string, required: false}
+            hint: Choose which classes are listed on the home page and in what order
+            field:
+              - label: Class
+                name: class
+                widget: relation
+                collection: classes
+                value_field: "{{slug}}"
+                search_fields: ["title"]
+                display_fields: ["title"]
       - label: Hours
         name: hours
         file: content/home-config/hours.json
@@ -73,3 +73,17 @@ collections:
             fields:
               - {label: Day(s), name: days, widget: string}
               - {label: Times, name: times, widget: string}
+  - label: Classes
+    name: classes
+    description: Enter information to be displayed about the classes offered
+    folder: content/classes
+    create: true
+    fields:
+      - {label: Class Name, name: title, widget: string}
+      - {label: Photo, name: img, widget: image, allow_multiple: false, required: false}
+      - {label: Instructor Name, name: instructor, widget: string}
+      - {label: Instructor Experience, name: experience, widget: string, required: false}
+      - {label: Phone Number, name: phone, widget: string, required: false}
+      - {label: Website URL, name: website, widget: string, required: false}
+      - {label: Facebook Tag, name: facebook, widget: string, required: false}
+      - {label: Instagram Tag, name: instagram, widget: string, required: false}

@@ -46,15 +46,19 @@ export default {
         // Fetch article
         const article = await $content('/home').fetch();
         // Fetch skill cards config
-        let { cards: skillCards } = await $content('/home-config/skill-cards').fetch();
-        skillCards = skillCards.map(card => {
+        const { cards: skillCardsData } = await $content('/home-config/skill-cards').fetch();
+        const skillCards = skillCardsData.map(card => {
             let cardCopy = {...card};
             let iconKey = cardCopy.icon;
             cardCopy.icon = ['fas', 'fa-' + iconKey];
             return cardCopy;
         });
         // Fetch class cards config
-        const { classes: classCards } = await $content('/home-config/class-cards').fetch();
+        const { classes: classSlugs } = await $content('/home-config/class-list').fetch();
+        const classData = await $content('/classes').where({slug: {$in: classSlugs}}).fetch();
+        const classCards = classSlugs.map(slug => {
+            return classData.find(c => c.slug === slug);
+        });
         // Merge into data
         return {
             article,
