@@ -84,7 +84,7 @@ collections:
     name: classes
     description: Enter information to be displayed about the classes offered
     folder: content/classes
-    extension: json
+    extension: md
     create: true
     fields:
       - {label: Class Name, name: title, widget: string}
