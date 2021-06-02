@@ -56,13 +56,13 @@ collections:
             widget: list
             hint: Choose which classes are listed on the home page and in what order
             field:
-              - label: Class
-                name: class
-                widget: relation
-                collection: classes
-                value_field: "{{slug}}"
-                search_fields: ["title"]
-                display_fields: ["title"]
+              label: Class
+              name: class
+              widget: relation
+              collection: classes
+              value_field: "{{slug}}"
+              search_fields: ["title"]
+              display_fields: ["title"]
       - label: Hours
         name: hours
         file: content/home-config/hours.json
