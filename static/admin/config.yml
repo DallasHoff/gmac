@@ -103,4 +103,5 @@ collections:
           - {label: Day(s), name: days, widget: select, multiple: true, default: ["Monday"], options: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]}
           - {label: Start Time, name: start, widget: datetime, date_format: false, time_format: "hh:mm a", format: "hh:mm a"}
           - {label: End Time, name: end, widget: datetime, date_format: false, time_format: "hh:mm a", format: "hh:mm a"}
+          - {label: Group, name: group, widget: string, required: false, hint: Note which group of students this class time is for if applicable}
       - {label: About the Class, name: body, widget: markdown, required: false}
