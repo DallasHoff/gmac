@@ -25,21 +25,8 @@ schedule:
     end: 12:30 pm
     group: Everyone
 ---
-This is **test content**. *It is not currently being displayed on the site.*
+**Taekwondo** is a popular martial art and international sport. It is the most practiced martial art in the world. Korean masters brought Taekwondo to the United States in the 1950’s. Introduced as a demonstration event at the 1988 Seoul Olympics, Taekwondo became a full medal Olympic competition sport at the 2000 games in Sydney Australia. Taekwondo is a stand-up martial art like karate, kungfu, and kickboxing that emphasizes defending oneself while staying on your feet. It teaches kicking, blocking, hand techniques, forms, balance, and discipline of the body and mind.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit ligula, placerat at ligula congue, egestas consectetur turpis. Duis non turpis justo. In commodo nisi id augue tristique, id sollicitudin sem suscipit. Pellentesque ultricies vitae turpis vitae tincidunt. Pellentesque volutpat arcu sit amet tincidunt fringilla. Morbi a turpis ullamcorper, aliquet quam sed, convallis erat. 
+**Griffin Taekwondo** meets on Mondays, Thursdays, and Saturdays and welcomes students from age six to adult and encourages the whole family to give it a try! The Hoffman family all earned their belts together, and the family that spars together wins together! But if you just want to bring the kids and watch them grow in skills and confidence- that’s fine too!
 
-### Cras Velit
-
-* Maecenas
-* Auctor
-* Rutrum
-* Pellentesque
-
-Cras velit ligula, imperdiet vitae mattis eu, malesuada eget purus. Pellentesque lacinia auctor dui, et pellentesque risus convallis ac. Sed sollicitudin purus id nisi tempor consequat vel nec lorem. Nulla et quam in ligula iaculis aliquet. Aliquam erat volutpat. Aliquam erat volutpat. Sed sagittis, dolor in eleifend elementum, urna libero vestibulum orci, in malesuada tellus quam non dolor. Donec eu lacinia metus.
-
-Maecenas auctor rutrum pellentesque. Mauris dapibus, metus non commodo malesuada, augue turpis commodo elit, a bibendum nunc tortor nec tortor. Aliquam porta lorem quis nisi mollis auctor. Etiam vestibulum ex non urna placerat dictum. In hac habitasse platea dictumst. Phasellus convallis non nunc vitae auctor. Curabitur facilisis dictum diam. Vivamus quis libero ipsum. Proin euismod metus et efficitur consectetur.
-
-### Lorem Ipsum
-
-Curabitur eget ante et velit facilisis sagittis at id nisi. Curabitur interdum feugiat tellus, tristique elementum est vestibulum non. Donec facilisis ex a nulla tempus aliquet. Praesent id tellus nec metus porta placerat id sit amet nisi. Suspendisse fermentum non neque sed accumsan. Duis aliquam sed urna vel aliquam. Fusce eros dui, aliquet at velit ut, facilisis rutrum nulla. Vestibulum lobortis ex eros, et faucibus velit vulputate at. Nulla dictum velit at ligula facilisis pharetra. Quisque varius porta tellus a laoreet. Sed lacinia ligula ipsum, et euismod nisl pharetra et. Sed ligula elit, pharetra at nunc in, imperdiet tristique est.
+To try out a class, give Eric a call and let him know when you’re coming. For your first class, wear comfortable gym clothes and don’t worry about your shoes since Taekwondo, like most martial arts, is practiced barefoot.
