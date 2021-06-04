@@ -38,7 +38,7 @@ collections:
         name: article
         file: content/home.md
         fields:
-          - {label: Article Content, name: body, widget: markdown, editor_components: [], hint: Briefly introduce visitors to the business}
+          - {label: Article Content, name: body, widget: markdown, buttons: [bold, italic, code, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list], editor_components: [], hint: Briefly introduce visitors to the business}
       - label: Skill Cards
         name: skill-cards
         file: content/home-config/skill-cards.json
@@ -104,4 +104,4 @@ collections:
           - {label: Start Time, name: start, widget: datetime, date_format: false, time_format: "hh:mm a", format: "hh:mm a"}
           - {label: End Time, name: end, widget: datetime, date_format: false, time_format: "hh:mm a", format: "hh:mm a"}
           - {label: Group, name: group, widget: string, required: false, hint: Note which group of students this class time is for if applicable}
-      - {label: About the Class, name: body, widget: markdown, editor_components: [], required: false}
+      - {label: About the Class, name: body, widget: markdown, buttons: [bold, italic, code, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list], editor_components: [], required: false}
