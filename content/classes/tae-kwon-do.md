@@ -38,8 +38,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit ligula, place
 
 Cras velit ligula, imperdiet vitae mattis eu, malesuada eget purus. Pellentesque lacinia auctor dui, et pellentesque risus convallis ac. Sed sollicitudin purus id nisi tempor consequat vel nec lorem. Nulla et quam in ligula iaculis aliquet. Aliquam erat volutpat. Aliquam erat volutpat. Sed sagittis, dolor in eleifend elementum, urna libero vestibulum orci, in malesuada tellus quam non dolor. Donec eu lacinia metus.
 
-![](/img/cms/eric.jpg)
-
 Maecenas auctor rutrum pellentesque. Mauris dapibus, metus non commodo malesuada, augue turpis commodo elit, a bibendum nunc tortor nec tortor. Aliquam porta lorem quis nisi mollis auctor. Etiam vestibulum ex non urna placerat dictum. In hac habitasse platea dictumst. Phasellus convallis non nunc vitae auctor. Curabitur facilisis dictum diam. Vivamus quis libero ipsum. Proin euismod metus et efficitur consectetur.
 
 ### Lorem Ipsum
