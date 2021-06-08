@@ -29,13 +29,11 @@ export default {
     list-style: none;
     padding: 0;
     &__word {
+        @include card;
         position: relative;
         width: 100%;
         margin: $gap1 0;
         padding: $gap2;
-        background-color: $light1;
-        border-top: 3px solid $red2;
-        box-shadow: $cardshadow;
         transition: transform 500ms, opacity 500ms;
         overflow: hidden;
         h3 {

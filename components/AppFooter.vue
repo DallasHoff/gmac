@@ -58,7 +58,7 @@ export default {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-bottom: $gap2;
+		margin: 0 auto $gap2;
 		&-item {
 			display: flex;
 			align-items: center;

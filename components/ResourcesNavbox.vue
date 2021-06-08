@@ -20,12 +20,10 @@ export default {
 @import "~/assets/_theme.scss";
 
 .resources-navbox {
+    @include card;
     position: relative;
     top: $gap2;
     padding: $gap2;
-    background-color: $light1;
-    border-top: 3px solid $red2;
-    box-shadow: $cardshadow;
     overflow: hidden;
 }
 </style>

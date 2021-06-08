@@ -47,3 +47,10 @@ $point1: 525px;
 $point2: 960px;
 $point3: 1366px;
 $point4: 1640px;
+
+
+@mixin card {
+    background-color: $light1;
+    border-top: 3px solid $red2;
+    box-shadow: $cardshadow;
+}

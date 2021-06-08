@@ -42,4 +42,12 @@ export default {
         padding: $gap4;
     }
 }
+
+.nuxt-content {
+    h2:not(:first-child) {
+        padding-top: $gap4;
+        margin-top: $gap4;
+        border-top: 1px solid $light6;
+    }
+}
 </style>

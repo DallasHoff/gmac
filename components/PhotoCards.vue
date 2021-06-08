@@ -28,13 +28,11 @@ export default {
     flex-wrap: wrap;
     padding: 0;
     &__card {
+        @include card;
         position: relative;
         width: 100%;
         margin: $gap1 0;
         padding: 0;
-        background-color: $light1;
-        border-top: 3px solid $red2;
-        box-shadow: $cardshadow;
         transition: transform 500ms, opacity 500ms;
         overflow: hidden;
         &--invisible {
