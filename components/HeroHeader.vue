@@ -57,6 +57,11 @@ export default {
                 }
             }
         },
+        fullView(n, o) {
+            if (n === true) {
+                this.resize();
+            }
+        }
     },
     methods: {
         resize() {
