@@ -2,16 +2,13 @@
 title: Tai Chi
 img: /img/cms/b2cf4941-172a-439b-bcd0-91d34a797000.jpeg
 instructor: Stacy Hoffman
-experience: "TKD Black Belt, ACE certified personal trainer, Tai Chi
-  certification through the Functional Aging Institute "
+experience: TKD Black Belt, ACE certified personal trainer, Tai Chi
+  certification through the Functional Aging Institute
 phone: 678-852-4414
 facebook: gmactaichi
 schedule:
   - days:
       - Tuesday
-    start: 09:00 am
-    end: 10:00 am
-  - days:
       - Thursday
     start: 09:00 am
     end: 10:00 am
@@ -27,6 +24,6 @@ When practiced regularly and correctly, tai chi can be a meaningful part of impr
 * Improved aerobic capacity
 * Increased energy and stamina
 * Improved flexibility, balance and agility
-* Improved muscle strength and definition\
-  \
-  (This instructor is a **Silver** **Sneakers** **Flex** provider.)
+* Improved muscle strength and definition
+
+(This instructor is a **Silver** **Sneakers** **Flex** provider.)
