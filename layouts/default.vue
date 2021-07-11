@@ -49,5 +49,11 @@ export default {
         margin-top: $gap4;
         border-top: 1px solid $light6;
     }
+    h3 {
+        margin-top: $gap4;
+    }
+    ul > li {
+        padding-left: $gap1;
+    }
 }
 </style>

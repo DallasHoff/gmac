@@ -49,8 +49,21 @@ $point3: 1366px;
 $point4: 1640px;
 
 
-@mixin card {
+@mixin card-plain {
     background-color: $light1;
-    border-top: 3px solid $red2;
     box-shadow: $cardshadow;
+}
+
+@mixin card {
+    @include card-plain;
+    border-top: 3px solid $red2;
+}
+
+@mixin circle-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    clip-path: circle();
 }

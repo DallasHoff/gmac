@@ -6,54 +6,27 @@
             </figure>
             <div>
                 <h3>
-                    {{card.title}}
+                    <a :href="'/classes/' + card.slug" class="class-cards__article-link">
+                        {{card.title}}
+                    </a>
                 </h3>
                 <h4 v-if="card.instructor">
                     {{card.instructor}}<span v-if="card.experience"> - {{card.experience}}</span>
                 </h4>
-                <div class="class-cards__links">
-                    <a :href="'tel:' + card.phone" v-if="card.phone" rel="noopener">
-                        <icon class="fas fa-phone fa-fw" title="Phone number"></icon>
-                        {{card.phone}}
-                    </a>
-                    <a :href="card.website" v-if="card.website" target="_blank" rel="noopener">
-                        <icon class="fas fa-link fa-fw" title="Website"></icon>
-                        {{getLinkText(card.website)}}
-                    </a>
-                    <a :href="'https://www.facebook.com/' + removeAt(card.facebook) + '/'" v-if="card.facebook" target="_blank" rel="noopener">
-                        <icon class="fab fa-facebook-square fa-fw" title="Facebook"></icon>
-                        {{removeAt(card.facebook)}}
-                    </a>
-                    <a :href="'https://www.instagram.com/' + removeAt(card.instagram) + '/'" v-if="card.instagram" target="_blank" rel="noopener">
-                        <icon class="fab fa-instagram fa-fw" title="Instagram"></icon>
-                        {{removeAt(card.instagram)}}
-                    </a>
-                </div>
+                <class-links class="class-cards__links" :class-content="card"></class-links>
             </div>
         </li>
     </ul>
 </template>
 
 <script>
-import Icon from '~/components/Icon.vue'
+import ClassLinks from '~/components/ClassLinks.vue'
 
 export default {
     name: 'ClassCards',
     props: ['cards', 'shown'],
-    methods: {
-        getLinkText(url) {
-            // Use link's host name for link text
-            if (!url) return '';
-            var matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
-            if (!matches) return url;
-            return matches[1];
-        },
-        removeAt(str) {
-            return str.replace(/\@/g, '');
-        }
-    },
     components: {
-        Icon
+        ClassLinks
     }
 }
 </script>
@@ -93,21 +66,11 @@ export default {
         padding-left: $gap3;
         padding-bottom: $gap3;
         img {
-            display: block;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 1;
-            object-fit: cover;
-            clip-path: circle();
+            @include circle-img;
         }
     }
     &__links {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: $gap3;
-        a {
-            margin-right: $gap3;
-        }
+        margin-top: $gap2;
     }
 }
 
