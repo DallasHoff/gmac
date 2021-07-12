@@ -17,7 +17,7 @@
                 Class Schedule
             </h2>
             <div class="page-classes__schedule">
-                <class-schedule-day v-for="day in Array.from(schedule)" :day="day[0]" :classes="day[1]" class="page-classes__schedule-day"></class-schedule-day>
+                <class-schedule-day v-for="day in Array.from(schedule)" :day="day[0]" :classes="day[1]" :key="day[0]" class="page-classes__schedule-day"></class-schedule-day>
             </div>
         </section>
         <section id="about" v-if="content.body">
@@ -93,18 +93,14 @@ export default {
 
 .page-classes {
     &__heading,
-    &__instructor {
+    &__instructor,
+    .nuxt-content h2,
+    .nuxt-content h3 {
         text-align: center;
     }
     &__links,
     &__schedule {
         justify-content: center;
-    }
-    .nuxt-content {
-        text-align: justify;
-        h2, h3 {
-            text-align: center;
-        }
     }
     &__instructor,
     &__links {
@@ -144,13 +140,9 @@ export default {
     .page-classes {
         &__heading,
         &__instructor,
-        .nuxt-content {
+        .nuxt-content h2,
+        .nuxt-content h3 {
             text-align: left;
-        }
-        .nuxt-content {
-            h2, h3 {
-                text-align: left;
-            }
         }
         &__links,
         &__schedule {

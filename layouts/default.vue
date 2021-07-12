@@ -52,8 +52,5 @@ export default {
     h3 {
         margin-top: $gap4;
     }
-    ul > li {
-        padding-left: $gap1;
-    }
 }
 </style>

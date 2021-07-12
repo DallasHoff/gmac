@@ -1,5 +1,5 @@
 ---
-title: Krav Maga/Combatives, Kids Krav & Combat Fitness
+title: Krav Maga Combatives, Kids Krav & Combat Fitness
 img: /img/cms/matt.jpg
 instructor: Matt Clanton
 experience: Krav Maga Black Belt, former law enforcement

@@ -53,7 +53,10 @@ ul {
     list-style-image: url('~/assets/img/decor/bullet.png');
     list-style-type: disc;
 }
-li {margin: .5rem 0;}
+li {
+    margin: .5rem 0;
+    padding-left: $gap1;
+}
 label {display: block;}
 
 article section,
