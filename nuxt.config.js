@@ -1,5 +1,6 @@
 const siteTitle = 'Griffin Martial Arts Center - Martial Arts School in Griffin, Georgia';
 const siteDescription = 'Griffin Martial Arts Center is a martial arts school for ages 6+ located in Griffin, Georgia.';
+const siteKeywords = 'griffin, georgia, martial arts, karate, taekwondo, tae kwon do, tai chi, eric hoffman';
 
 
 export default {
@@ -18,7 +19,7 @@ export default {
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'description', name: 'description', content: siteDescription },
-            { hid: 'keywords', name: 'keywords', content: 'taekwondo, tae kwon do, tkd, griffin, georgia, martial arts, karate, eric hoffman' },
+            { hid: 'keywords', name: 'keywords', content: siteKeywords },
             { name: 'apple-mobile-web-app-title', content: 'GMAC' },
             { name: 'application-name', content: 'Griffin Martial Arts Center' },
             { name: 'msapplication-TileColor', content: '#dd2222' },

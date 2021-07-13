@@ -77,7 +77,9 @@ export default {
             title: this.content.title + ' | Griffin Martial Arts Center',
             meta: [
                 { hid: 'og:title', name: 'og:title', content: this.content.title + ' | Griffin Martial Arts Center' },
-                { hid: 'og:url', property: 'og:url', content: 'https://griffindojo.com/classes/' + this.slug }
+                { hid: 'og:url', property: 'og:url', content: 'https://griffindojo.com/classes/' + this.slug },
+                { hid: 'description', name: 'description', content: `${this.content.instructor} is teaching ${this.content.title} at Griffin Martial Arts Center.` },
+                { hid: 'og:description', property: 'og:description', content: `${this.content.instructor} is teaching ${this.content.title} at Griffin Martial Arts Center.` }
             ]
         }
     },
