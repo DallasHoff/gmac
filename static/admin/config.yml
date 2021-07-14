@@ -4,6 +4,8 @@ backend:
 media_folder: assets/img/cms # Media files will be stored in the repo here
 public_folder: /img/cms # The src attribute for uploaded media will begin with this
 logo_url: /img/cms-logo.png # Logo shown on CMS login page
+editor:
+  preview: false # Hide the preview pane in the editor
 collections:
   - label: Home Page
     name: home-config
@@ -105,3 +107,22 @@ collections:
           - {label: End Time, name: end, widget: datetime, date_format: false, time_format: "hh:mm a", format: "hh:mm a"}
           - {label: Group, name: group, widget: string, required: false, hint: Note which group of students this class time is for if applicable}
       - {label: About the Class, name: body, widget: markdown, buttons: [bold, italic, code, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list], editor_components: [], required: false}
+  - label: Class Resources
+    label_singular: Resource
+    name: class-resources
+    summary: "{{title}} ({{class}})"
+    description: Additional articles about the classes
+    folder: content/class-resources
+    extension: md
+    create: true
+    fields:
+      - label: Class
+        name: class
+        widget: relation
+        collection: classes
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
+      - {label: Title, name: title, widget: string}
+      - {label: Introduction, name: description, widget: string}
+      - {label: Body, name: body, widget: markdown, buttons: [bold, italic, code, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list], editor_components: []}
