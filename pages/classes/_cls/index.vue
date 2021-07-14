@@ -38,9 +38,12 @@ export default {
     data() {
         return {}
     },
-    async asyncData({$content, params}) {
+    async asyncData({$content, params, error}) {
         const cls = params.cls;
-        const content = await $content('classes', cls).fetch();
+        const content = await $content('classes', cls).fetch().catch(() => {
+            error({statusCode: 404, message: 'This page could not be found'});
+            return {};
+        });
         return {
             content,
             cls
