@@ -53,6 +53,9 @@ export default {
     router: {
         trailingSlash: true
     },
+    generate: {
+        fallback: '404.html'
+    },
 
     /*
     ** Customize the progress-bar color
