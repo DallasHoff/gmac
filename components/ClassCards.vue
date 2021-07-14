@@ -6,7 +6,7 @@
             </figure>
             <div>
                 <h3>
-                    <a :href="'/classes/' + card.slug" class="class-cards__article-link">
+                    <a :href="'/classes/' + card.slug + '/'" class="class-cards__article-link">
                         {{card.title}}
                     </a>
                 </h3>

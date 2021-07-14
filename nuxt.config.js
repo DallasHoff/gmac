@@ -48,6 +48,13 @@ export default {
     },
 
     /*
+    ** Routing options
+    */
+    router: {
+        trailingSlash: true
+    },
+
+    /*
     ** Customize the progress-bar color
     */
     loading: { color: '#851414' },
