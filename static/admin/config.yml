@@ -115,6 +115,7 @@ collections:
     folder: content/class-resources
     extension: md
     create: true
+    slug: "{{class}}-{{slug}}"
     fields:
       - label: Class
         name: class
