@@ -3,7 +3,7 @@ class: tae-kwon-do
 title: Uniform Badge Guide
 description: Follow this guide to add badges to the uniform.
 ---
-![Photo of uniform with badges properly placed](/img/cms/tkd-uniform.jpg)
+![Photo of uniform with badges properly placed](/img/cms/tkd-uniform.jpg "Badge placement example")
 
 ## Adding Badges
 
