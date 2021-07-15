@@ -30,9 +30,6 @@
 </template>
 
 <script>
-import ClassLinks from '~/components/ClassLinks.vue'
-import ClassScheduleDay from '~/components/ClassScheduleDay.vue'
-
 export default {
     name: 'PageClasses',
     data() {
@@ -85,10 +82,6 @@ export default {
                 { hid: 'og:description', property: 'og:description', content: `${this.content.instructor} is teaching ${this.content.title} at Griffin Martial Arts Center.` }
             ]
         }
-    },
-    components: {
-        ClassLinks,
-        ClassScheduleDay
     }
 }
 </script>

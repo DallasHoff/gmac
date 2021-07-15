@@ -1,19 +1,14 @@
 <template>
     <a :href="href" class="back-button no-link-underline">
-        <icon class="fas fa-chevron-left back-button__icon"></icon>
+        <fa-icon class="fas fa-chevron-left back-button__icon"></fa-icon>
         {{label}}
     </a>
 </template>
 
 <script>
-import Icon from '~/components/Icon.vue'
-
 export default {
     name: 'BackButton',
-    props: ['href', 'label'],
-    components: {
-        Icon
-    }
+    props: ['href', 'label']
 }
 </script>
 

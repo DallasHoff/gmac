@@ -22,11 +22,15 @@
 import VueIntersect from '~/components/VueIntersect.vue'
 import ClassCards from '~/components/ClassCards.vue'
 import WordCards from '~/components/WordCards.vue'
-import ResourcesList from '~/components/ResourcesList.vue'
 
 export default {
     name: 'PageHome',
     layout: 'home',
+    components: {
+        VueIntersect,
+        ClassCards,
+        WordCards
+    },
     data() {
         return {
             shown: {
@@ -81,12 +85,6 @@ export default {
                 }
             });
         }
-    },
-    components: {
-        VueIntersect,
-        ClassCards,
-        WordCards,
-        ResourcesList
     }
 }
 </script>

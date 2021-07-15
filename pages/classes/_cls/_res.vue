@@ -16,8 +16,6 @@
 </template>
 
 <script>
-import BackButton from '~/components/BackButton.vue'
-
 export default {
     name: 'PageClassRes',
     data() {
@@ -48,9 +46,6 @@ export default {
                 { hid: 'og:description', property: 'og:description', content: this.content.description }
             ]
         }
-    },
-    components: {
-        BackButton
     }
 }
 </script>

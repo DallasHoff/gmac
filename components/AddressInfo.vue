@@ -1,23 +1,21 @@
 <template>
-    <lazy-section id="address" class="address-info">
+    <appear-section id="address" class="address-info">
         <stroke-heading>Address</stroke-heading>
         <address>
-            1454 Williamson Rd.<br/>
-            Bldg B<br />
+            1454 Williamson Rd.<br>
+            Bldg B<br>
             Griffin, GA 30224
         </address>
-    </lazy-section>
+    </appear-section>
 </template>
 
 <script>
-import LazySection from '~/components/LazySection.vue'
-import StrokeHeading from '~/components/StrokeHeading.vue'
+import AppearSection from '~/components/AppearSection.vue'
 
 export default {
     name: 'AddressInfo',
     components: {
-        LazySection,
-        StrokeHeading
+        AppearSection
     }
 }
 </script>

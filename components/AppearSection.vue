@@ -1,7 +1,7 @@
 <template>
     <vue-intersect @enter="isShown = true" @unsupported="isShown = true" :threshold="[0.4]">
-        <section class="lazy-block">
-            <div class="lazy-block__inner" :class="{'lazy-block__inner--shown': isShown}">
+        <section class="appear-block">
+            <div class="appear-block__inner" :class="{'appear-block__inner--shown': isShown}">
                 <slot></slot>
             </div>
         </section>
@@ -12,7 +12,10 @@
 import VueIntersect from '~/components/VueIntersect.vue'
 
 export default {
-    name: 'LazySection',
+    name: 'AppearSection',
+    components: {
+        VueIntersect
+    },
     data() {
         return {
             isShown: true
@@ -20,16 +23,13 @@ export default {
     },
     mounted() {
         this.isShown = false;
-    },
-    components: {
-        VueIntersect
     }
 }
 </script>
 
 <style lang="scss">
 @supports (clip-path: polygon(-20% -20%, 20% -20%, 0% 120%, -40% 120%)) {
-    .lazy-block {
+    .appear-block {
         &__inner {
             visibility: hidden;
             clip-path: polygon(-20% -20%, 20% -20%, 0% 120%, -40% 120%);
@@ -42,7 +42,7 @@ export default {
     }
 }
 @supports not (clip-path: polygon(-20% -20%, 20% -20%, 0% 120%, -40% 120%)) {
-    .lazy-block {
+    .appear-block {
         &__inner {
             visibility: hidden;
             opacity: 0;

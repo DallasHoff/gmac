@@ -20,14 +20,9 @@
 </template>
 
 <script>
-import ClassLinks from '~/components/ClassLinks.vue'
-
 export default {
     name: 'ClassCards',
-    props: ['cards', 'shown'],
-    components: {
-        ClassLinks
-    }
+    props: ['cards', 'shown']
 }
 </script>
 

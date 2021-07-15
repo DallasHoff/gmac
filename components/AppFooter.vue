@@ -3,25 +3,25 @@
 		<div class="app-footer__connect">
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<icon class="fab fa-facebook-square fa-fw" title="Facebook page"></icon>
+					<fa-icon class="fab fa-facebook-square fa-fw" title="Facebook page"></fa-icon>
 				</span>
 				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">GriffinMartialArtsCenter</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<icon class="fab fa-instagram fa-fw" title="Instagram page"></icon>
+					<fa-icon class="fab fa-instagram fa-fw" title="Instagram page"></fa-icon>
 				</span>
 				<a href="https://www.instagram.com/gmac1454/" rel="noopener" target="_blank">gmac1454</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<icon class="fas fa-envelope fa-fw" title="Email address"></icon>
+					<fa-icon class="fas fa-envelope fa-fw" title="Email address"></fa-icon>
 				</span>
 				<a href="mailto:contact@griffindojo.com" rel="noopener" target="_top">contact@griffindojo.com</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<icon class="fas fa-phone fa-fw" title="Phone number"></icon>
+					<fa-icon class="fas fa-phone fa-fw" title="Phone number"></fa-icon>
 				</span>
 				<a href="tel:888-218-5713" rel="noopener">888-218-5713</a>
 			</div>
@@ -31,17 +31,12 @@
 </template>
 
 <script>
-import Icon from '~/components/Icon.vue'
-
 export default {
     name: 'AppFooter',
 	computed: {
 		currentYear() {
 			return new Date().getFullYear();
 		}
-	},
-	components: {
-		Icon
 	}
 }
 </script>

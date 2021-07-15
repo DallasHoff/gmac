@@ -1,21 +1,16 @@
 <template>
     <ul class="word-cards">
         <li class="word-cards__word" :class="{'word-cards__word--invisible': shown === false}" v-for="(card, index) in cards" :key="card.word" :style="{'transition-delay': (index * 100) + 'ms'}">
-            <icon :class="card.icon" class="fa-fw word-cards__icon"></icon>
+            <fa-icon :class="card.icon" class="fa-fw word-cards__icon"></fa-icon>
             <h3>{{card.word}}</h3>
         </li>
     </ul>
 </template>
 
 <script>
-import Icon from '~/components/Icon.vue'
-
 export default {
     name: 'WordCards',
-    props: ['cards', 'shown'],
-    components: {
-        Icon
-    }
+    props: ['cards', 'shown']
 }
 </script>
 

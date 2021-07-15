@@ -1,5 +1,5 @@
 <template>
-    <lazy-section id="announcements" class="announcements-list" v-if="announcements.length > 0">
+    <appear-section id="announcements" class="announcements-list" v-if="announcements.length > 0">
         <stroke-heading>Announcements</stroke-heading>
         <ul class="announcements-list__list">
             <li class="announcements-list__item" v-for="(announcement, index) in announcements" :key="announcement.headline">
@@ -7,16 +7,17 @@
                 <stroke-rule v-if="index < (announcements.length - 1)"></stroke-rule>
             </li>
         </ul>
-    </lazy-section>
+    </appear-section>
 </template>
 
 <script>
-import LazySection from '~/components/LazySection.vue'
-import StrokeHeading from '~/components/StrokeHeading.vue'
-import StrokeRule from '~/components/StrokeRule.vue'
+import AppearSection from '~/components/AppearSection.vue'
 
 export default {
     name: 'AnnouncementsList',
+    components: {
+        AppearSection
+    },
     data() {
         return {
             announcements: []
@@ -25,11 +26,6 @@ export default {
     async fetch() {
         const { announcements } = await this.$content('/home-config/announcements').fetch();
         this.announcements = announcements;
-    },
-    components: {
-        LazySection,
-        StrokeHeading,
-        StrokeRule
     }
 }
 </script>

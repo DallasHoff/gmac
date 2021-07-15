@@ -1,27 +1,25 @@
 <template>
     <div class="class-links">
         <a :href="'tel:' + classContent.phone" v-if="classContent.phone" rel="noopener">
-            <icon class="fas fa-phone fa-fw" title="Phone number"></icon>
+            <fa-icon class="fas fa-phone fa-fw" title="Phone number"></fa-icon>
             {{classContent.phone}}
         </a>
         <a :href="classContent.website" v-if="classContent.website" target="_blank" rel="noopener">
-            <icon class="fas fa-link fa-fw" title="Website"></icon>
+            <fa-icon class="fas fa-link fa-fw" title="Website"></fa-icon>
             {{getLinkText(classContent.website)}}
         </a>
         <a :href="'https://www.facebook.com/' + removeAt(classContent.facebook) + '/'" v-if="classContent.facebook" target="_blank" rel="noopener">
-            <icon class="fab fa-facebook-square fa-fw" title="Facebook"></icon>
+            <fa-icon class="fab fa-facebook-square fa-fw" title="Facebook"></fa-icon>
             {{removeAt(classContent.facebook)}}
         </a>
         <a :href="'https://www.instagram.com/' + removeAt(classContent.instagram) + '/'" v-if="classContent.instagram" target="_blank" rel="noopener">
-            <icon class="fab fa-instagram fa-fw" title="Instagram"></icon>
+            <fa-icon class="fab fa-instagram fa-fw" title="Instagram"></fa-icon>
             {{removeAt(classContent.instagram)}}
         </a>
     </div>
 </template>
 
 <script>
-import Icon from '~/components/Icon.vue'
-
 export default {
     name: 'ClassLinks',
     props: ['classContent'],
@@ -36,9 +34,6 @@ export default {
         removeAt(str) {
             return str.replace(/\@/g, '');
         }
-    },
-    components: {
-        Icon
     }
 }
 </script>

@@ -29,16 +29,6 @@
 </template>
 
 <script>
-import AppNavbar from '~/components/AppNavbar.vue'
-import HeroHeader from '~/components/HeroHeader.vue'
-import HeroLogo from '~/components/HeroLogo.vue'
-import CarouselThumbs from '~/components/CarouselThumbs.vue'
-import AnnouncementsList from '~/components/AnnouncementsList.vue'
-import AddressInfo from '~/components/AddressInfo.vue'
-import ScheduleInfo from '~/components/ScheduleInfo.vue'
-import CalendarInfo from '~/components/CalendarInfo.vue'
-import AppFooter from '~/components/AppFooter.vue'
-
 export default {
     name: 'LayoutHome',
     data() {
@@ -66,17 +56,6 @@ export default {
             this.carouselPhotos = images;
             this.showThumbs = true;
         }
-    },
-    components: {
-        AppNavbar,
-        HeroHeader,
-        HeroLogo,
-        CarouselThumbs,
-        AnnouncementsList,
-        AddressInfo,
-        ScheduleInfo,
-        CalendarInfo,
-        AppFooter
     }
 }
 </script>

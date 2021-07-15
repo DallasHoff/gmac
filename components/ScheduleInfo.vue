@@ -1,5 +1,5 @@
 <template>
-    <lazy-section id="gym-hours" class="schedule-info" v-if="schedule.length > 0">
+    <appear-section id="gym-hours" class="schedule-info" v-if="schedule.length > 0">
         <stroke-heading>Gym Hours</stroke-heading>
         <table class="schedule-info__table">
             <tbody>
@@ -9,15 +9,17 @@
                 </tr>
             </tbody>
         </table>
-    </lazy-section>
+    </appear-section>
 </template>
 
 <script>
-import LazySection from '~/components/LazySection.vue'
-import StrokeHeading from '~/components/StrokeHeading.vue'
+import AppearSection from '~/components/AppearSection.vue'
 
 export default {
     name: 'ScheduleInfo',
+    components: {
+        AppearSection
+    },
     data() {
         return {
             schedule: []
@@ -26,10 +28,6 @@ export default {
     async fetch() {
         const { rows } = await this.$content('/home-config/hours').fetch();
         this.schedule = rows;
-    },
-    components: {
-        LazySection,
-        StrokeHeading
     }
 }
 </script>
