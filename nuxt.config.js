@@ -6,6 +6,7 @@ const siteKeywords = 'griffin, georgia, martial arts, karate, taekwondo, tae kwo
 export default {
     target: 'static',
     ssr: true,
+    components: true,
 
     /*
     ** Headers of the page
@@ -92,6 +93,17 @@ export default {
     // nuxt-optimized-images configuration
     optimizedImages: {
         handleImages: ['jpeg', 'png', 'webp', 'gif']
+    },
+
+    /*
+    ** Hooks
+    */
+    hooks: {
+        'content:file:beforeParse': (file) => {
+            // Convert Markdown images to use component
+            if (file.extension !== '.md') return;
+            file.data = file.data.replace(/!\[(.+?)\]\((.+?)\)/g, '<article-figure src="$2" alt="$1"></article-figure>');
+        }
     },
 
     /*

@@ -3,8 +3,6 @@ class: tae-kwon-do
 title: Uniform Badge Guide
 description: Follow this guide to add badges to the uniform.
 ---
-![Photo of uniform with badges properly placed](/img/cms/uniform.jpg)
-
 ## Adding Badges
 
 **Important Note**: Put the uniform *on* the student and properly tie closed *before* pinning the badges in place. If the patches are pinned on without the uniform being properly tied, the front badges will be crooked when the uniform is worn.
