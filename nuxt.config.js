@@ -102,7 +102,7 @@ export default {
         'content:file:beforeParse': (file) => {
             // Convert Markdown images to use component
             if (file.extension !== '.md') return;
-            file.data = file.data.replace(/!\[(.+?)\]\((.+?)\)/g, '<article-figure src="$2" alt="$1"></article-figure>');
+            file.data = file.data.replace(/!\[(.+?)?\]\((.+?)( \"(.+?)\")?\)/g, '<article-figure src="$2" alt="$1" caption="$4"></article-figure>');
         }
     },
 
