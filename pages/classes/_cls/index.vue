@@ -2,7 +2,7 @@
     <div class="page-classes">
         <section id="introduction">
             <figure class="page-classes__figure" v-if="content.img">
-                <img :src="require('~/assets' + content.img + '?resize&size=200')" alt="">
+                <img :src="require('~/assets' + content.img + '?resize&size=200')" alt="" width="200" height="200">
             </figure>
             <h1 class="page-classes__heading">
                 {{content.title}}
