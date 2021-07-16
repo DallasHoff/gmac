@@ -1,8 +1,8 @@
 <template>
-    <a :href="href" class="back-button no-link-underline">
+    <nuxt-link :to="href" class="back-button no-link-underline">
         <fa-icon class="fas fa-chevron-left back-button__icon"></fa-icon>
         {{label}}
-    </a>
+    </nuxt-link>
 </template>
 
 <script>

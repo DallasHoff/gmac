@@ -6,9 +6,9 @@
             </figure>
             <div>
                 <h3>
-                    <a :href="'/classes/' + card.slug + '/'" class="class-cards__article-link">
+                    <nuxt-link :to="'/classes/' + card.slug + '/'" class="class-cards__article-link">
                         {{card.title}}
-                    </a>
+                    </nuxt-link>
                 </h3>
                 <h4 v-if="card.instructor">
                     {{card.instructor}}<span v-if="card.experience"> - {{card.experience}}</span>
