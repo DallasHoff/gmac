@@ -26,6 +26,9 @@
             </h2>
             <nuxt-content :document="content"></nuxt-content>
         </section>
+        <section id="resources" v-if="resources && resources.length">
+            <resources-navbox :resources="resources"></resources-navbox>
+        </section>
     </div>
 </template>
 
@@ -41,9 +44,11 @@ export default {
             error({statusCode: 404, message: 'This page could not be found'});
             return {};
         });
+        const resources = await $content('class-resources').where({class: cls}).sortBy('createdAt', 'asc').without(['body']).fetch();
         return {
             content,
-            cls
+            cls,
+            resources
         };
     },
     computed: {

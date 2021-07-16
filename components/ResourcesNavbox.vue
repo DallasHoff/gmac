@@ -1,13 +1,20 @@
 <template>
     <nav class="resources-navbox">
-        <b>Other Resources</b>
-        <resources-list></resources-list>
+        <h3>
+            Class Resources
+        </h3>
+        <ul class="resources-navbox__list">
+            <li v-for="res in resources" :key="res.slug">
+                <nuxt-link :to="res.slug + '/'">{{res.title}}</nuxt-link>: {{res.description}}
+            </li>
+        </ul>
     </nav>
 </template>
 
 <script>
 export default {
-    name: 'ResourcesNavbox'
+    name: 'ResourcesNavbox',
+    props: ['resources']
 }
 </script>
 
@@ -16,9 +23,14 @@ export default {
 
 .resources-navbox {
     @include card;
-    position: relative;
-    top: $gap2;
     padding: $gap2;
     overflow: hidden;
+    &__list {
+        margin: $gap1 0;
+    }
+    a.nuxt-link-active {
+        color: $subtle;
+        background-image: none;
+    }
 }
 </style>
