@@ -12,6 +12,9 @@
         <section id="content" v-if="content.body">
             <nuxt-content :document="content"></nuxt-content>
         </section>
+        <section id="more-class-resources" v-if="resources && resources.length && resources.length > 1">
+            <resources-navbox heading="More Class Resources" :resources="resources"></resources-navbox>
+        </section>
     </div>
 </template>
 
@@ -29,11 +32,13 @@ export default {
             return {};
         });
         const { title: className } = await $content('classes', cls).only(['title']).fetch();
+        const resources = await $content('class-resources').where({class: cls}).sortBy('createdAt', 'asc').without(['body']).fetch();
         return {
             cls,
             res,
             content,
-            className
+            className,
+            resources
         };
     },
     head() {

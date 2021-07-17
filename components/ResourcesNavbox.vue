@@ -1,11 +1,11 @@
 <template>
     <nav class="resources-navbox">
         <h3>
-            Class Resources
+            {{heading || 'Class Resources'}}
         </h3>
         <ul class="resources-navbox__list">
             <li v-for="res in resources" :key="res.slug">
-                <nuxt-link :to="res.slug + '/'">{{res.title}}</nuxt-link>: {{res.description}}
+                <nuxt-link :to="'/classes/' + res.class + '/' + res.slug + '/'">{{res.title}}</nuxt-link>: {{res.description}}
             </li>
         </ul>
     </nav>
@@ -14,7 +14,7 @@
 <script>
 export default {
     name: 'ResourcesNavbox',
-    props: ['resources']
+    props: ['resources', 'heading']
 }
 </script>
 
