@@ -9,6 +9,10 @@
       "icon": "smile-beam"
     },
     {
+      "word": "Self-Defense",
+      "icon": "shield-alt"
+    },
+    {
       "word": "Balance",
       "icon": "balance-scale"
     },
@@ -19,10 +23,6 @@
     {
       "word": "Physical Fitness",
       "icon": "running"
-    },
-    {
-      "word": "Self-Defense",
-      "icon": "shield-alt"
     }
   ]
 }
