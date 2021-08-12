@@ -93,7 +93,7 @@ collections:
       - {label: Instructor Photo, name: img, widget: image, allow_multiple: false, required: false}
       - {label: Instructor Name, name: instructor, widget: string}
       - {label: Instructor Experience, name: experience, widget: string, required: false}
-      - {label: Phone Number, name: phone, widget: string, required: false}
+      - {label: Phone Number, name: phone, widget: string, required: false, pattern: ['\d\d\d-\d\d\d-\d\d\d\d', 'Please provide a number in this format: 000-000-0000']}
       - {label: Website URL, name: website, widget: string, required: false}
       - {label: Facebook Tag, name: facebook, widget: string, required: false}
       - {label: Instagram Tag, name: instagram, widget: string, required: false}
