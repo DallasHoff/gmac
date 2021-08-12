@@ -1,9 +1,9 @@
 ---
-title: Tang Soo Do, Little Dragons & MomFu Self-Defense
+title: "Tang Soo Do, Little Dragons "
 img: /img/cms/michelle.jpg
-instructor: Michelle Worth
-experience: 5th-degree Black Belt, ACE certified personal trainer
-phone: 404-381-7273
+instructor: "Michelle "
+experience: 5th-degree Black Belt, certified PT
+phone: ""
 schedule:
   - days:
       - Tuesday
