@@ -2,7 +2,7 @@
 title: "TRX suspension class "
 img: /img/cms/tracyw.jpg
 instructor: Tracy L Waites
-experience: Level 2 TRX instructor
+experience: Personal trainer, Level 2 TRX instructor, and certified in aerial yoga
 phone: (678) 673-8898 (please text)
 facebook: thearkkdaze
 schedule:
