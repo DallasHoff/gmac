@@ -12,4 +12,9 @@ schedule:
     start: 12:15 pm
     end: 01:00 pm
 ---
-Join us for a challenging strength and cardio workout using the popular TRX suspension method.
+Join us for a challenging strength and cardio workout using the popular TRX suspension method. Tracy Waites has over 30 years of experience in fitness and training. She will bring out the best in you with an engaging and challenging workout! We provide the gear - or you can bring your own TRX gear!
+
+Why TRX? \
+https://www.trxtraining.com/why-trx
+
+(Check back for announcements here or on our Facebook page for information on Tracy’s famous AERIAL YOGALATES!)
