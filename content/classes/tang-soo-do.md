@@ -3,7 +3,7 @@ title: "Tang Soo Do, Little Dragons "
 img: /img/cms/michelle.jpg
 instructor: "Michelle "
 experience: 5th-degree Black Belt, certified PT
-phone: ""
+phone: 404-381-7273
 schedule:
   - days:
       - Tuesday
