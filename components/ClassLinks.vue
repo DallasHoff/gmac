@@ -1,19 +1,19 @@
 <template>
     <div class="class-links">
         <a :href="'tel:' + classContent.phone" v-if="classContent.phone" rel="noopener">
-            <fa-icon class="fas fa-phone fa-fw" title="Phone number"></fa-icon>
+            <i class="fas fa-phone fa-fw" title="Phone number"></i>
             {{classContent.phone}}
         </a>
         <a :href="classContent.website" v-if="classContent.website" target="_blank" rel="noopener">
-            <fa-icon class="fas fa-link fa-fw" title="Website"></fa-icon>
+            <i class="fas fa-link fa-fw" title="Website"></i>
             {{getLinkText(classContent.website)}}
         </a>
         <a :href="'https://www.facebook.com/' + removeAt(classContent.facebook) + '/'" v-if="classContent.facebook" target="_blank" rel="noopener">
-            <fa-icon class="fab fa-facebook-square fa-fw" title="Facebook"></fa-icon>
+            <i class="fab fa-facebook-square fa-fw" title="Facebook"></i>
             {{removeAt(classContent.facebook)}}
         </a>
         <a :href="'https://www.instagram.com/' + removeAt(classContent.instagram) + '/'" v-if="classContent.instagram" target="_blank" rel="noopener">
-            <fa-icon class="fab fa-instagram fa-fw" title="Instagram"></fa-icon>
+            <i class="fab fa-instagram fa-fw" title="Instagram"></i>
             {{removeAt(classContent.instagram)}}
         </a>
     </div>

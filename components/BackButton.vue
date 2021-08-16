@@ -1,6 +1,6 @@
 <template>
     <nuxt-link :to="href" class="back-button no-link-underline">
-        <fa-icon class="fas fa-chevron-left back-button__icon"></fa-icon>
+        <i class="fas fa-chevron-left back-button__icon"></i>
         {{label}}
     </nuxt-link>
 </template>

@@ -41,10 +41,10 @@ export default {
             { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
             { rel: 'manifest', href: '/manifest.json' },
             { rel: 'mask-icon', type: '/safari-pinned-tab.svg', color: '#dd2222' },
-            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merienda+One|Merriweather:400,700&display=swap' }
-        ],
-        script: [
-            { src: 'https://kit.fontawesome.com/2e549a7184.js', crossorigin: 'anonymous', async: true }
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merienda+One|Merriweather:400,700&display=swap' },
+            { rel: 'stylesheet', href: '/icons/css/fontawesome.min.css' },
+            { rel: 'stylesheet', href: '/icons/css/solid.min.css' },
+            { rel: 'stylesheet', href: '/icons/css/brands.min.css' }
         ]
     },
 

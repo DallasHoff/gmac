@@ -3,25 +3,25 @@
 		<div class="app-footer__connect">
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<fa-icon class="fab fa-facebook-square fa-fw" title="Facebook page"></fa-icon>
+					<i class="fab fa-facebook-square fa-fw" title="Facebook page"></i>
 				</span>
 				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">GriffinMartialArtsCenter</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<fa-icon class="fab fa-instagram fa-fw" title="Instagram page"></fa-icon>
+					<i class="fab fa-instagram fa-fw" title="Instagram page"></i>
 				</span>
 				<a href="https://www.instagram.com/gmac1454/" rel="noopener" target="_blank">gmac1454</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<fa-icon class="fas fa-envelope fa-fw" title="Email address"></fa-icon>
+					<i class="fas fa-envelope fa-fw" title="Email address"></i>
 				</span>
 				<a href="mailto:contact@griffindojo.com" rel="noopener" target="_top">contact@griffindojo.com</a>
 			</div>
 			<div class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
-					<fa-icon class="fas fa-phone fa-fw" title="Phone number"></fa-icon>
+					<i class="fas fa-phone fa-fw" title="Phone number"></i>
 				</span>
 				<a href="tel:888-218-5713" rel="noopener">888-218-5713</a>
 			</div>

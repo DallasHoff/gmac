@@ -3,7 +3,7 @@
         <stroke-heading>Class Schedule</stroke-heading>
         <p>View the full calendar of upcoming classes and events on Google Calendar.</p>
         <a href="https://calendar.google.com/calendar/embed?src=ericgriffintkd%40gmail.com&ctz=America%2FNew_York" rel="noopener" target="_blank">
-            <fa-icon class="fas fa-arrow-circle-right fa-fw"></fa-icon>
+            <i class="fas fa-arrow-circle-right fa-fw"></i>
             Calendar
         </a>
     </appear-section>
