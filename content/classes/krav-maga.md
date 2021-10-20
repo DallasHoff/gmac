@@ -1,14 +1,14 @@
 ---
-title: Krav Maga Combatives, Kids Krav & Combat Fitness
+title: Dynamic Defense and Fitness
 img: /img/cms/matt.jpg
 instructor: Matt Clanton
 experience: Krav Maga Black Belt, former law enforcement
 phone: 678-485-1498
 website: https://www.dcsd.info
 ---
-### About Dynamic Combatives & Self Defense
+### About Dynamic Defense and Fitness
 
-Dynamic Combatives and Self Defense is a principle-based system with a focus on simplicity. Our goal is to keep things simple, because simple saves lives. We welcome everyone from those with no experience to those with a wealth of previous experience to train with us and see for themselves.
+Dynamic Defense is a principle-based system with a focus on simplicity. Our goal is to keep things simple, because simple saves lives. We welcome everyone from those with no experience to those with a wealth of previous experience to train with us and see for themselves.
 
 ### About the instructor
 
@@ -18,7 +18,7 @@ His focus as an instructor is to give you the most realistic and practical train
 
 ### What you will learn
 
-Primary Focuses of our Krav Maga and combatives training:
+Primary Focuses of our self-defense training:
 
 * Legal and moral aspects surrounding self defense/use-of-force principles
 * Adopting a survival mindset (situational awareness, risk management, threat management, crisis management).
