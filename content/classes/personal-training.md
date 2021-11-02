@@ -27,3 +27,5 @@ My training focus for myself and my clients is on functional fitness for every d
 If you want to train with a partner - we can do that too! 
 
 Give me a call or text and we'll set up a time to meet and talk about your goals.
+
+(I am also available for training at [URMC Wellness Center](https://www.wellnessurmc.org/) in Thomaston on Tuesday, Thursday evenings and Friday morning. You must be a member and sign up for personal training.)
