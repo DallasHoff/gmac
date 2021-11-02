@@ -3,14 +3,10 @@ title: Personal Training
 img: /img/cms/ace-pt-profile.jpg
 instructor: Stacy Hoffman
 experience: ACE Fitness certified personal trainer and group fitness instructor,
-  Certified since 2017
+  Certified since 2017; TKD blackbelt
 phone: 678-852-4414
 facebook: "@StacyFitTrainer"
 schedule:
-  - days:
-      - Monday
-    start: 01:51 pm
-    end: 01:51 pm
   - days:
       - Monday
       - Wednesday
