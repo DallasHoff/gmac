@@ -1,16 +1,3 @@
 {
-    "rows": [
-        {
-            "days": "Monday - Friday",
-            "times": "6:00 am - 10:00 pm"
-        },
-        {
-            "days": "Saturday",
-            "times": "6:00 am - 1:00 pm"
-        },
-        {
-            "days": "Sunday",
-            "times": "Closed"
-        }
-    ]
+  "rows": []
 }
