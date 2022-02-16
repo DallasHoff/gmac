@@ -5,6 +5,12 @@ instructor: Matt Clanton
 experience: Krav Maga Black Belt, former law enforcement
 phone: 678-485-1498
 website: https://www.dcsd.info
+schedule:
+  - days:
+      - Saturday
+      - Sunday
+    start: 03:00 pm
+    end: 05:00 pm
 ---
 ### About Dynamic Defense and Fitness
 
