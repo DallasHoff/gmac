@@ -9,10 +9,10 @@ schedule:
   - days:
       - Monday
       - Wednesday
-    start: 12:15 pm
-    end: 01:00 pm
+    start: 12:30 pm
+    end: 01:15 pm
 ---
-Join us for a challenging strength and cardio workout using the popular TRX suspension method. Tracy Waites has over 30 years of experience in fitness and training. She will bring out the best in you with an engaging and challenging workout! We provide the gear - or you can bring your own TRX gear!
+Join us for a challenging resistance and balance workout using the popular TRX suspension method. Tracy Waites has over 30 years of experience in fitness and training. She will bring out the best in you with an engaging and challenging workout! We provide the gear - or you can bring your own TRX gear!
 
 [Why TRX?](https://www.trxtraining.com/why-trx)
 
