@@ -34,7 +34,7 @@ export default {
     align-items: center;
     max-width: $point3;
     margin: auto;
-    min-height: $logo-text-height * 2 + ($logo-text-height / 3);
+    min-height: calc($logo-text-height * 2 + ($logo-text-height / 3));
     &__title {
         position: absolute;
         font-size: 11vw;
@@ -64,7 +64,7 @@ export default {
 @media (min-width: $point1) {
     .hero-logo {
         $logo-text-height: 10vw;
-        min-height: $logo-text-height + ($logo-text-height / 5);
+        min-height: calc($logo-text-height + ($logo-text-height / 5));
         &__title {
             font-size: 8vw;
             line-height: $logo-text-height;
