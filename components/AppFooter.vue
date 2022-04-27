@@ -1,29 +1,29 @@
 <template>
 	<footer class="app-footer">
 		<div class="app-footer__connect">
-			<div class="app-footer__connect-item">
+			<div v-if="config.facebook" class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
 					<i class="fab fa-facebook-square fa-fw" title="Facebook page"></i>
 				</span>
-				<a href="https://www.facebook.com/GriffinMartialArtsCenter/" rel="noopener" target="_blank">GriffinMartialArtsCenter</a>
+				<a :href="`https://www.facebook.com/${config.facebook}/`" rel="noopener" target="_blank">{{config.facebook}}</a>
 			</div>
-			<div class="app-footer__connect-item">
+			<div v-if="config.instagram" class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
 					<i class="fab fa-instagram fa-fw" title="Instagram page"></i>
 				</span>
-				<a href="https://www.instagram.com/gmac1454/" rel="noopener" target="_blank">gmac1454</a>
+				<a :href="`https://www.instagram.com/${config.instagram}/`" rel="noopener" target="_blank">{{config.instagram}}</a>
 			</div>
-			<div class="app-footer__connect-item">
+			<div v-if="config.email" class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
 					<i class="fas fa-envelope fa-fw" title="Email address"></i>
 				</span>
-				<a href="mailto:contact@griffindojo.com" rel="noopener" target="_top">contact@griffindojo.com</a>
+				<a :href="`mailto:${config.email}`" rel="noopener" target="_top">{{config.email}}</a>
 			</div>
-			<div class="app-footer__connect-item">
+			<div v-if="config.phone" class="app-footer__connect-item">
 				<span class="app-footer__connect-icon">
 					<i class="fas fa-phone fa-fw" title="Phone number"></i>
 				</span>
-				<a href="tel:888-218-5713" rel="noopener">888-218-5713</a>
+				<a :href="`tel:${config.phone}`" rel="noopener">{{config.phone}}</a>
 			</div>
 		</div>
 		<p class="app-footer__footnote">Site by Dallas Hoffman | Copyright {{currentYear}} Griffin Martial Arts Center</p>
@@ -32,11 +32,19 @@
 
 <script>
 export default {
-    name: 'AppFooter',
+	name: 'AppFooter',
+	data() {
+		return {
+			config: {}
+		}
+	},
 	computed: {
 		currentYear() {
 			return new Date().getFullYear();
 		}
+	},
+	async fetch() {
+		this.config = await this.$content('/footer').fetch();
 	}
 }
 </script>

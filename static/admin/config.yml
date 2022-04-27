@@ -81,6 +81,14 @@ collections:
             fields:
               - {label: Day(s), name: days, widget: string}
               - {label: Times, name: times, widget: string}
+      - label: Footer
+        name: footer
+        file: content/footer.json
+        fields:
+          - {label: Facebook Tag, name: facebook, widget: string, required: false}
+          - {label: Instagram Tag, name: instagram, widget: string, required: false}
+          - {label: Email Address, name: email, widget: string, required: false}
+          - {label: Phone Number, name: phone, widget: string, required: false, pattern: ['^\d\d\d-\d\d\d-\d\d\d\d$', 'Please provide a number in the format 000-000-0000']}
   - label: Classes
     label_singular: Class
     name: classes
