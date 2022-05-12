@@ -1,18 +1,25 @@
 ---
-title: Dynamic Defense and Fitness
+title: Dynamic Defense & Krav Maga
 img: /img/cms/matt.jpg
 instructor: Matt Clanton
 experience: Krav Maga Black Belt, former law enforcement
 phone: 678-485-1498
-website: https://www.dcsd.info
+website: https://trainingforreality.com
 schedule:
   - days:
+      - Thursday
+    start: 05:00 pm
+    end: 06:00 pm
+  - days:
       - Saturday
+    start: 12:30 pm
+    end: 01:30 pm
+  - days:
       - Sunday
     start: 03:00 pm
     end: 05:00 pm
 ---
-### About Dynamic Defense and Fitness
+### About Dynamic Defense and Krav Maga
 
 Dynamic Defense is a principle-based system with a focus on simplicity. Our goal is to keep things simple, because simple saves lives. We welcome everyone from those with no experience to those with a wealth of previous experience to train with us and see for themselves.
 
@@ -36,5 +43,3 @@ Primary Focuses of our self-defense training:
 * Defending against grabs and holds used in abductions
 * Weapon defense, both preventative and reactive, including weapon disarms
 * Anti-kidnapping and Counter-Custody for traveling internationally or in non-permissible environments
-
-In addition to the above, we also offer firearms and home defense training.
