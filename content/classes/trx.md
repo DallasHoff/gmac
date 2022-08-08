@@ -2,10 +2,10 @@
 title: TRX /  Aerial Yoga / Personal Training
 img: ""
 instructor: Tracy L. Waites , Stacy Hoffman
-experience: Tracy is an experienced fitness pro and personal trainer, a level 2
-  TRX instructor, and certified in aerial yoga. Stacy is an ACE certified
-  Personal Trainer and certified group fitness instructor, as well as a black
-  belt in Tae Kwon Do and certified in Tai Chi fitness.
+experience: Tracy is an experienced fitness pro and personal trainer, level 2
+  TRX instructor & certified in aerial yoga. Stacy is a certified Personal
+  Trainer & group fitness instructor, earned a black belt in Tae Kwon Do & is
+  certified in Tai Chi fitness.
 phone: 678-673-8898
 facebook: thearkkdaze
 schedule:
