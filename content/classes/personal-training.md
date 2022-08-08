@@ -1,5 +1,5 @@
 ---
-title: Personal Training
+title: TRX and personal training
 img: /img/cms/ace-pt-profile.jpg
 instructor: Stacy Hoffman
 experience: ACE Fitness certified personal trainer and group fitness instructor,
@@ -11,11 +11,6 @@ schedule:
       - Monday
       - Wednesday
     start: 11:00 am
-    end: 12:00 pm
-  - days:
-      - Tuesday
-      - Thursday
-    start: 09:00 am
     end: 12:00 pm
 ---
 My training focus for myself and my clients is on functional fitness for every day strength and endurance and quality of life.  Do you want to get through your day with energy to spare? Be strong and independent?  Shape up your shape? Improve your balance and protect your joints?  Let me help you to live the fit life!
