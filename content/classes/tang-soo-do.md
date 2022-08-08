@@ -1,5 +1,5 @@
 ---
-title: "Tang Soo Do, Little Dragons "
+title: Tang Soo Do
 img: /img/cms/michelle.jpg
 instructor: "Michelle "
 experience: 5th-degree Black Belt Tang Soo Do
