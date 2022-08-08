@@ -1,5 +1,5 @@
 ---
-title: "TRX /  Aerial Yoga "
+title: TRX /  Aerial Yoga / Personal Training
 img: /img/cms/tracyw.jpg
 instructor: Tracy L. Waites
 experience: Personal trainer, Level 2 TRX instructor, and certified in aerial yoga
