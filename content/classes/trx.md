@@ -1,7 +1,7 @@
 ---
 title: TRX /  Aerial Yoga / Personal Training
 img: ""
-instructor: Tracy L. Waites
+instructor: Tracy L. Waites , Stacy Hoffman
 experience: Tracy is an experienced fitness pro and personal trainer, a level 2
   TRX instructor, and certified in aerial yoga. Stacy is an ACE certified
   Personal Trainer and certified group fitness instructor, as well as a black
