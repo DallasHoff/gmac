@@ -12,7 +12,7 @@
             </p>
             <class-links class="page-classes__links" :class-content="content"></class-links>
         </section>
-        <section id="schedule" v-if="schedule">
+        <section id="schedule" v-if="schedule && schedule.length">
             <h2 class="page-classes__heading">
                 Class Schedule
             </h2>
