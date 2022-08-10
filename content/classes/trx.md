@@ -4,7 +4,8 @@ img: ""
 instructor: Tracy L. Waites , Stacy Hoffman
 experience: ""
 phone: 678-673-8898
-facebook: thearkkdaze
+facebook: https://www.facebook.com/StacyFitTrainer
+instagram: https://instagram.com/thearkkdaze?igshid=YmMyMTA2M2Y=
 schedule:
   - days:
       - Monday
