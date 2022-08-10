@@ -4,8 +4,8 @@ img: ""
 instructor: Tracy L. Waites , Stacy Hoffman
 experience: ""
 phone: 678-673-8898
-facebook: https://www.facebook.com/StacyFitTrainer
-instagram: https://instagram.com/thearkkdaze?igshid=YmMyMTA2M2Y=
+facebook: ""
+instagram: ""
 schedule:
   - days:
       - Monday
@@ -21,9 +21,9 @@ schedule:
 ---
 Join us for a challenging resistance and balance workout using the popular TRX suspension method. We provide the gear - or you can bring your own TRX gear! 
 
-Tracy Waites has 30 years experience as a fitness pro and personal trainer. She is a level 2 TRX instructor & certified in aerial yoga.  She will bring out the best in you with an engaging and challenging workout! 
+Tracy Waites (678-673-8898) has 30 years experience as a fitness pro and personal trainer. She is a level 2 TRX instructor & certified in aerial yoga.  She will bring out the best in you with an engaging and challenging workout! 
 
-Stacy Hoffman is a certified personal trainer & group fitness instructor, earned a black belt in Tae Kwon Do & is certified in Tai Chi fitness.
+Stacy Hoffman (678-852-4414) is a certified personal trainer & group fitness instructor, earned a black belt in Tae Kwon Do & is certified in Tai Chi fitness.
 
 Click here:  [Why TRX?](https://www.trxtraining.com/why-trx)
 
