@@ -4,7 +4,7 @@ img: /img/cms/be39237a-ea83-4097-a130-d17ee2f82874.jpeg
 instructor: Tracy L. Waites , Stacy Hoffman
 experience: ""
 phone: 678-673-8898
-facebook: ""
+facebook: https://www.facebook.com/StacyFitTrainer
 instagram: ""
 schedule:
   - days:
