@@ -1,10 +1,10 @@
 ---
-title: TRX /  Aerial Yoga
+title: TRX / Aerial Yoga
 img: /img/cms/be39237a-ea83-4097-a130-d17ee2f82874.jpeg
-instructor: Tracy L. Waites , Stacy Hoffman
+instructor: Tracy L. Waites and Stacy Hoffman
 experience: ""
 phone: 678-673-8898
-facebook: https://www.facebook.com/StacyFitTrainer
+facebook: StacyFitTrainer
 instagram: ""
 schedule:
   - days:
@@ -25,6 +25,6 @@ Tracy Waites (678-673-8898) has 30 years experience as a fitness pro and persona
 
 Stacy Hoffman (678-852-4414) is a certified personal trainer & group fitness instructor, earned a black belt in Tae Kwon Do & is certified in Tai Chi fitness.
 
-Click here:  [Why TRX?](https://www.trxtraining.com/why-trx)
+[Why TRX?](https://www.trxtraining.com/why-trx)
 
 Aerial yoga is a relaxing strength and flexibility class using yoga hammocks.
