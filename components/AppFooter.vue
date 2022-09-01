@@ -26,7 +26,7 @@
 				<a :href="`tel:${config.phone}`" rel="noopener">{{config.phone}}</a>
 			</div>
 		</div>
-		<p class="app-footer__footnote">Site by Dallas Hoffman | Copyright {{currentYear}} Griffin Martial Arts Center</p>
+		<p class="app-footer__footnote">Site by <a href="https://dallashoffman.com/" class="no-link-underline">Dallas Hoffman</a> | Copyright {{currentYear}} Griffin Martial Arts Center</p>
 	</footer>
 </template>
 
@@ -76,6 +76,9 @@ export default {
 	&__footnote {
 		font-size: .65em;
 		line-height: 1.5em;
+		a {
+			text-decoration: underline;
+		}
 	}
 	a {
 		color: inherit;
