@@ -6,4 +6,4 @@ Follow us on Facebook [@GriffinMartialArtsCenter](https://www.facebook.com/griff
 
 Contact Eric D. Hoffman, 3rd degree blackbelt for information about Tae Kwon Do.
 
-Each independent program or class is led by a certified or experienced and trained instructor. Contact the individual instructor about signing up for their classes.
+Each independent program or class is led by a certified or experienced and trained instructor. See classes and contact information below.
