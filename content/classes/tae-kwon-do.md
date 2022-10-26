@@ -1,10 +1,10 @@
 ---
-title: Tae Kwon-Do
+title: Griffin Tae Kwon-Do
 img: /img/cms/eric.jpg
 instructor: Eric Hoffman
 experience: 3rd-degree Black Belt
 phone: 678-778-3789
-website: ""
+website: http://griffindojo.com
 facebook: GriffinTKD
 schedule:
   - days:
