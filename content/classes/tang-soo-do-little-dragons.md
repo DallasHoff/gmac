@@ -1,5 +1,6 @@
 ---
 title: Tang Soo Do / Little Dragons
+img: /img/cms/michelle.jpg
 instructor: Michelle Worth
 experience: ""
 phone: 404-381-7273
