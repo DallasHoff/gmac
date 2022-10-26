@@ -1,5 +1,5 @@
 ---
-title: Gravity Fitness @ GMAC
+title: Gravity Studio @ GMAC
 img: /img/cms/be39237a-ea83-4097-a130-d17ee2f82874.jpeg
 instructor: Tracy L. Waites, CPT
 experience: ""
