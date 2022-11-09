@@ -2,7 +2,7 @@
 title: Griffin Tae Kwon-Do
 img: /img/cms/eric.jpg
 instructor: Eric Hoffman
-experience: 3rd-degree Black Belt
+experience: 3rd-degree Black Belt, GMAC owner and lead instructor of TKD
 phone: 678-778-3789
 website: http://griffindojo.com
 facebook: GriffinTKD
