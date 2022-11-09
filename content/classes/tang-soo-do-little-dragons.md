@@ -2,7 +2,7 @@
 title: Tang Soo Do / Little Dragons
 img: /img/cms/michelle.jpg
 instructor: Michelle Worth
-experience: ""
+experience: "5th dan black belt "
 phone: 404-381-7273
 website: http://www.usmartialartscenter.org
 schedule:
