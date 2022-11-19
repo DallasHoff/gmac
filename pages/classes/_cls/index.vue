@@ -20,7 +20,7 @@
                 <class-schedule-day v-for="day in Array.from(schedule)" :day="day[0]" :classes="day[1]" :key="day[0]" class="page-classes__schedule-day"></class-schedule-day>
             </div>
         </section>
-        <section id="about" v-if="content.body">
+        <section id="about" v-if="content.body.children.length">
             <h2 class="page-classes__heading">
                 About the Class
             </h2>

@@ -9,7 +9,7 @@
                 {{content.description}}
             </p>
         </section>
-        <section id="content" v-if="content.body">
+        <section id="content" v-if="content.body.children.length">
             <nuxt-content :document="content"></nuxt-content>
         </section>
         <section id="more-class-resources" v-if="resources && resources.length && resources.length > 1">
