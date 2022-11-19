@@ -1,5 +1,5 @@
 ---
-title: "Gravity Studio @ GMAC "
+title: "Gravity Studio @ GMAC"
 img: /img/cms/tracyw.jpg
 instructor: Tracy L. Waites, CPT
 experience: Certified instructor, 30+ years experience
@@ -12,12 +12,12 @@ schedule:
       - Wednesday
     start: 12:30 pm
     end: 01:15 pm
-    group: TRX system
+    group: TRX System
   - days:
       - Friday
     start: 12:30 pm
     end: 01:15 pm
-    group: "Aerial Yoga "
+    group: "Aerial Yoga"
 ---
 Join us for a challenging resistance and balance workout using the popular TRX suspension method. Adaptable to every fitness level.  [Why TRX?](https://www.trxtraining.com/why-trx)
 

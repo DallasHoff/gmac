@@ -1,5 +1,5 @@
 ---
-title: TRX and personal training
+title: TRX and Personal Training
 img: /img/cms/ace-pt-profile.jpg
 instructor: Stacy Hoffman
 experience: ACE Fitness certified personal trainer and group fitness instructor,
