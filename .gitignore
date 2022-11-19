@@ -1,6 +1,9 @@
 /dist
 .nuxt
 
+.DS_Store
+/Icon?
+
 # Logs
 logs
 *.log
