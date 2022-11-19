@@ -46,7 +46,9 @@ export default {
     flex-wrap: wrap;
     a {
         margin-right: $gap3;
-        line-height: 2em;
+        padding: $gap1 0;
+        line-height: 1.2;
+        white-space: nowrap;
     }
 }
 </style>
