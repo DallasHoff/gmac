@@ -1,6 +1,6 @@
 **Learn confidence, self-defense, discipline, fitness and agility, and maybe break some boards at                       Griffin Martial Arts Center in Griffin, Georgia!**
 
-We have evening and Saturday martial arts classes for the whole family. We also host daytime fitness classes in TRX suspension fitness and aerial yoga, and personal training appointments.  
+In our facility in Griffin we have evening and Saturday martial arts classes for the whole family - Tae kwon do, Tang Soo Do, boxing instruction. We also host Gravity Studios @ GMAC!
 
 Follow us on Facebook [@GriffinMartialArtsCenter](https://www.facebook.com/griffinmartialartscenter/) [](https://www.instagram.com/gmac1454/) for announcements about classes and events. 
 
