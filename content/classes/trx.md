@@ -4,7 +4,7 @@ img: /img/cms/a3624470-f90c-458b-bc52-4e77d66c19cc.jpeg
 instructor: Tracy L. Waites, CPT
 experience: Certified instructor, 30+ years experience
 phone: 678-673-8898
-facebook: https://www.facebook.com/groups/1187960211760108/
+facebook: ""
 instagram: ""
 schedule:
   - days:
