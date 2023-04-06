@@ -48,6 +48,16 @@ schedule:
     start: 06:00 pm
     end: 06:50 pm
     group: AERIAL YOGA
+  - days:
+      - Friday
+    start: 10:00 am
+    end: 11:00 am
+    group: TRX Xpress followed by MOVE Xpress at 10:30!
+  - days:
+      - Saturday
+    start: 09:00 am
+    end: 11:30 am
+    group: SPLICED!!!
 ---
 [](https://www.trxtraining.com/why-trx)Tracy Waites (678-673-8898) is THE BOSS in the Gravity Studio! She has 30 years experience as a fitness pro and personal trainer. She will bring out the best in you with engaging and challenging workouts in a variety of fun formats. 
 
