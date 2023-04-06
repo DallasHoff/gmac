@@ -59,6 +59,8 @@ schedule:
     end: 11:00 am
     group: TRX Xpress followed by MOVE Xpress at 10:30!
 ---
+Join Gravity Studios at GMAC on GroupMe app!
+
 Gravity Studios offers smaller size classes in the latest exciting formats. Shake it up and try something new in a friendly, positive environment.
 
 [](https://www.trxtraining.com/why-trx)Tracy Waites is THE BOSS in the Gravity Studio! She has 30 years experience as a fitness pro and personal trainer. She will bring out the best in you with engaging and challenging workouts!
