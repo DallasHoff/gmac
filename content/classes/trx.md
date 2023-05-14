@@ -5,7 +5,7 @@ instructor: Tracy L. Waites, CPT
 experience: Certified instructor, 30+ years experience
 phone: 678-673-8898
 website: ""
-facebook: Gravity Studios at GMAC
+facebook: https://www.facebook.com/profile.php?id=100088044517533&mibextid=LQQJ4d
 instagram: ""
 schedule:
   - days:
