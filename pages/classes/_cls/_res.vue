@@ -46,7 +46,7 @@ export default {
             title: `${this.content.title} | ${this.className} | Griffin Martial Arts Center`,
             meta: [
                 { hid: 'og:title', name: 'og:title', content: `${this.content.title} | ${this.className} | Griffin Martial Arts Center` },
-                { hid: 'og:url', property: 'og:url', content: `https://griffindojo.com/classes/${this.cls}/${this.res}/` },
+                { hid: 'og:url', property: 'og:url', content: `https://griffin-dojo.com/classes/${this.cls}/${this.res}/` },
                 { hid: 'description', name: 'description', content: this.content.description },
                 { hid: 'og:description', property: 'og:description', content: this.content.description }
             ]

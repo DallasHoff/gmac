@@ -29,8 +29,8 @@ export default {
             { name: 'twitter:card', content: 'summary' },
             { hid: 'og:title', property: 'og:title', content: siteTitle },
             { property: 'og:type', content: 'article' },
-            { hid: 'og:url', property: 'og:url', content: 'https://griffindojo.com/' },
-            { property: 'og:image', content: 'https://griffindojo.com/apple-touch-icon.png' },
+            { hid: 'og:url', property: 'og:url', content: 'https://griffin-dojo.com/' },
+            { property: 'og:image', content: 'https://griffin-dojo.com/apple-touch-icon.png' },
             { hid: 'og:description', property: 'og:description', content: siteDescription },
             { property: 'og:site_name', content: 'Griffin Martial Arts Center' }
         ],
