@@ -42,7 +42,8 @@ export default {
     head() {
         return {
             script: [
-                {src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true}
+                {src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true},
+                {src: 'https://static.cloudflareinsights.com/beacon.min.js', defer: true, 'data-cf-beacon': '{"token": "ff947d0b02b64314b322f906d90c8f5e"}'}
             ]
         }
     },
